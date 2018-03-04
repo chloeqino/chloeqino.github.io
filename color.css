@@ -309,3 +309,43 @@ background-color: transparent;
 input:focus{
 	outline: none;
 }
+@media only screen and (orientation: portrait) 
+{
+.generate_color{
+
+	width: 90%;
+}
+.container{
+   
+	width: 89%;
+	max-width: 660px;
+	min-width: 164px;
+	
+	margin-top: 35px;
+	
+	
+    
+}
+#image{
+float: none;
+margin: auto;
+width: 88%;
+display: block;
+background-color: transparent;
+}
+img{
+	float: none;
+	display: block;
+	width: 65%;
+	margin: auto;
+}
+.ques{
+	float: none;
+width: 80%;
+letter-spacing: 1px;
+display: block;
+margin: auto;
+
+}
+
+}
