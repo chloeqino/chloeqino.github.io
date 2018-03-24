@@ -5,14 +5,36 @@
 	<title>Just For Fun</title>
 	<link rel="stylesheet" type="text/css" href="color.css">
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700|Titillium+Web:200,400" rel="stylesheet">
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<script src="color.js"></script>
 
 	
 </head>
 <body>
+	
 	<div class="header">
 		<a href="#"><h5><font id="font-0">J</font><font id="font-1">s </font><font id="font-2">Pra</font><font id="font-3">ct</font><font id="font-4">ic</font><font id="font-5">e</font></h5></a>
+<div class="menu">
+	
+	<i class="fa fa-bars"></i>
+	<div class="dropdown">
+		<a href="#">Fav Color</a>
+		<a href="#sweet_hsl">Generate Random Color</a>
+		<a href="#dmv">DMV Practice Test</a>
+
+	</div>
+
+
+</div>
+
        
 	</div>
+
 
 	<br>
 		<div class="container">
@@ -35,7 +57,7 @@
 		<input type="radio" name="color" value="purple" onclick="thePurple()" >purple<br>
 		<input type="radio" name="color" value="red" onclick="theRed()">red<br>
 		<input type="radio" name="color" value="orange" onclick="theOrange()" >orange<br>
-		<input type="radio" name="color" value="green" onclick="theGreen()" >green
+<input type="radio" name="color" value="green" onclick="theGreen()" >green
        	</p>
         </div>
 </div><br>
@@ -65,7 +87,7 @@
 Saturation: 43%<br>
 Lightness: 95%<br>
 <a href="https://en.wikipedia.org/wiki/HSL_and_HSV" target="_blank"><font id="link">What is HSL?</font></a>
-</div><br><br><br><div class="button">
+</div><div class="button">
 <button onclick="randomColor()" id="gcolor">Click Me</button>
 </div>
 </div>
@@ -74,8 +96,34 @@ Lightness: 95%<br>
 	<br>
 	<button onclick="heartColor()">Click Me</button><br>
 <div id="heart">&hearts;</div>
-<p id="valid">valid</p></center>
+<p id="valid"> </p></center><br>
+<hr id="dmv">
+<div class="form">
+	<b>You can help keep the driver behind you at a safe distance by:</b> <br>
 
-<script src="color.js"></script>
+	<input type="radio" name="dmv" id="answer" onclick="checkIt(this)" value="wrong">
+Driving 3-5 mph faster than the car behind<br>
+     <input type="radio" name="dmv" id="answer" onclick="checkIt(this)" value="wrong">
+     Driving 3-5 mph slower than the car behind<br>
+     <input type="radio" name="dmv" id="answer" onclick="checkIt(this)" value="correct">
+     Keeping a steady speed<br>
+     <div id="checking"></div>
+     
+
+
+</div>
+
+<!--Contact Info-->
+<hr class="contact_info">
+<footer>
+	<!--github-->
+	<a href="https://github.com/chloeqino" target="_blank"><i class="fa fa-github" id="icon"></i> chloeqino</a>
+	<!--insta-->
+<a href="https://www.instagram.com/bertha.cfish/" target="_blank"><i class="fa fa-instagram" id="icon"></i> bertha.cfish</a>
+    <!--facebook-->
+<a href="https://www.facebook.com/bertha.cino" target="_blank"><i class="fa fa-facebook-square" id="icon"></i> Qinyu Chen</a>
+</footer>
+
+
 </body>
 </html>

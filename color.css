@@ -3,37 +3,105 @@
 padding: 0;
 margin: 0;
 }
+.content{
+	margin: auto;
+	width: 85%;
+	
+	background-color: white;
+	max-width: 940px;
+	 box-shadow: 0 0 6px #E5E5E5, 0 4px 10px #FCF4F0;
+	 background-color: rgba(255,254,254,0.9);
+}
 body{
 	padding: 0;
 	margin: 0;
 	font-family:'Titillium Web', sans-serif;
 	
-	background-color: white;
 }
 .header{
+	
 	position: fixed;
 	z-index: 10;
 	top: 0;
-	left:0;
 	width: 100%;
-
+margin: auto;
 	 backdrop-filter:blur(10px);
 	 -webkit-backdrop-filter:blur(10px);
      border-bottom: 1px solid rgba(255,255,255,0.5);
      box-shadow: 0 0 6px #E5E5E5;
 	font-size: 19px;
-	background: rgba(255,253,254,0.8);
+	background: rgba(255,253,254,0.9);
 }
 
 
 .header h5{
-	padding: 8px 32px;
-	text-align: center;
+	padding: 9px 32px 7px 5%;
+
+	text-align: left;
 	letter-spacing: 4px;
     color: black;
+    float: left;
+}
+.header .menu{
+
+display: inline-table;
+text-align: right;
+float: right;
+padding: 8px 0px 8px 39px;
+margin-right: 5%;
+
+}
+.menu i{
+	padding: 0;
+	margin: 0;
+    cursor: pointer;
+	text-align: right;
+	color: #D2AFF1;
 }
 .header a{
 	text-decoration: none;
+}
+.dropdown{
+	float: none;
+	clear: both;
+	display: table;
+	opacity: 0;
+	backdrop-filter:blur(10px);
+	 -webkit-backdrop-filter:blur(10px);
+	  box-shadow: 0 1px 5px #E5E5E5;
+	transition: opacity 0.7s;
+	-webkit-transition: opacity 0.7s;
+	-moz-transtion:opacity 0.7s;
+	margin:0;
+	border: 1px dashed #E9D7F8;
+	border-top: none;
+	border
+	text-align: left;
+	background-color: rgba(255,254,255,0.9);
+	position: absolute;
+	top: 100%;
+	right: 38px;
+	
+}
+.header .menu .dropdown a{
+	text-align: left;
+	display: block;
+	margin: 0;
+	width: 100%;
+font-family: sans-serif;
+color: #888888;
+font-size: 14px;
+font-weight: 200;
+padding: 12px 6px;
+letter-spacing: 0.04em;
+border-bottom: 1px solid #EFFCFA;
+}
+.menu:hover .dropdown{
+	display: block;
+	opacity: 1;
+}
+.dropdown a:hover{
+	background-color:  rgba(255,236,255,0.9);
 }
 #font-0{
 	color: #F1CEAF;
@@ -57,12 +125,12 @@ color: #F1B6AF;
 #image{
 z-index: 8;
 float: left;
-margin-top: 10%;
+margin-top: 6%;
 	padding: 0;
 text-align: center;
 width: 48%;
 
-background-color: transparent;
+
 }
 
 
@@ -86,13 +154,17 @@ div.welCome:hover #wish{
 
 visibility: visible;
 }*/
-
+.header::after{
+	clear: both;
+	display: table;
+	content: "";
+}
 .ques{
-  margin-top: 10%;
+  margin-top: 6%;
   justify-content: center;
  text-align: center;
     padding: 9px 5px;
-    
+    width: 50%;
     float: right;
         background-color: transparent;
 }
@@ -111,10 +183,10 @@ input:checked{
 	
 	margin: auto;
 	width: 89%;
-	max-width: 660px;
+	max-width: 860px;
 	min-width: 564px;
 	
-	margin-top: 20px;
+	margin-top: 5px;
 	
 	z-index: 1;
     
@@ -135,14 +207,14 @@ img{
 	height: 28%;
 	min-width: 266px;
 	min-height: 262px;
-    margin: 0;
-    float: left;
+    margin: auto;
+    
     border-radius: 50%;
     border: 3px solid seashell;
    
 }
 .ques{
-	
+	float: left;
 
 letter-spacing: 2px;
 
@@ -156,10 +228,10 @@ letter-spacing: 2px;
 	font-weight: lighter;
 }
 button{
-	border:  1px solid #F1597B;
+	border:  1px solid #EBC7CF;
 	background-color: white;
-	padding: 19px 18px;
-	color:  #F1597B;;
+	padding: 14px 15px;
+	color:  #EBC7CF;
 	font-size: 16px;
 	letter-spacing: 2px;
 	font-weight: lighter;
@@ -195,9 +267,12 @@ button:hover{
 	font-size: 49px;
 	padding: 23px 12px 6px 12px;
 }
-#valid{
-	font-size: 20px;
+#valid{ font-family: sans-serif;
+
+	font-size: 17px;
   color: #E1DEDE;
+  font-weight:200; 
+  letter-spacing: 0.05em;
 }
 hr{
 	border-color: transparent;
@@ -205,9 +280,10 @@ hr{
 	margin: 25px;
 }
 .generate_color{
+	background-color: white;
 	z-index: 1;
 	width: 65%;
-	max-width: 550px;
+	max-width: 700px;
 	margin: auto;
 	border: 3px solid #E1DEDE;
 	
@@ -224,7 +300,7 @@ hr{
 }
 .col-1{
 	text-align: center;
-	width: 50%;
+	width: 60%;
 	float: left;
      
 }
@@ -233,15 +309,17 @@ hr{
 	width: 95%;
 	text-align: center;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	height: 140px;
 	border: 2px dashed #E1DEDE;
      color: white;
 	border-radius: 12px;
 }
 .col-2{
+	
    color: #6F6F6F;
 	padding: 15px 0 2px 44px;
-	width: 50%;
+	width: 40%;
 	float: left;
 	font-weight: 300;
 	letter-spacing: 0.04em;
@@ -265,12 +343,17 @@ hr{
 .col-2::after{
 	clear: both;
 	display: table;
-	content:"";
+	
+	
 }
 .button{
-	padding-top: 2px;
+	
 	clear: both;
 	width: 100%;
+	
+	margin-top: 12px;
+
+	
 }
 .button button#gcolor{
 	clear: both;
@@ -309,18 +392,97 @@ background-color: transparent;
 input:focus{
 	outline: none;
 }
+footer{
+	font-family: times;
+	letter-spacing: 0.04em;
+	font-weight: 100;
+	display: block;
+	padding: 0;
+	 border-bottom: none;
+	width: 100%;
+	margin: 0;
+	background: rgba(254,250,254,0.9);
+background-clip: padding-box;
+	text-align: center;
+	border-top: 1px solid rgba(232,232,232,0.8);
+    
+}
+footer #icon{
+	font-size: 20px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+footer a{
+display: inline-block;
+text-decoration: none;
+	font-size: 13px;
+	padding: 6px 0;
+ margin: 0 5%;
+cursor: pointer;
+color: #BBB8BF;
+}
+footer i{
+	max-width: 10px;
+	margin: 0;
+    
+	transition-duration: 0.3s;
+}
+footer a:hover{
+	color: #D7A3F8;
+}
+.form{
+	display: table;
+	margin: auto;
+	font-family: times;
+	font-weight: 100;
+	font-size: 18px;
+	line-height: 1.4;
+	background-color:#EEF1F2;
+	padding: 7px 37px; 
+}
+.form b{
+
+font-weight: 300;
+line-height: 1.7;
+
+}
+#checking{
+	display: table;
+	padding: 4px 6px;
+	margin-top: 4px;
+	border-radius: 5px;
+	letter-spacing: 2px;
+
+}
+#mobile{
+	position: fixed;
+	bottom: 3px;
+	left: 5px;
+	z-index: 9;
+	background-color: #B28CE2;
+	color: white;
+	padding: 4px 8px;
+	letter-spacing: 2px;
+
+}
 @media only screen and (orientation: portrait) 
 {
-.generate_color{
 
+
+.generate_color{
+     height: auto;
 	width: 90%;
 }
+.col-1, .col-2{
+	width: 50%;
+}
+
 .container{
    
-	width: 89%;
+	width: 99%;
 	max-width: 660px;
-	min-width: 64px;
-	
+	min-width:64px;
+	margin: auto;
 	margin-top: 35px;
 	
 	
@@ -337,6 +499,8 @@ img{
 	float: none;
 	display: block;
 	width: 65%;
+	min-width: 250px;
+	height: auto;
 	margin: auto;
 }
 .ques{
@@ -346,6 +510,9 @@ letter-spacing: 1px;
 display: block;
 margin: auto;
 
+}
+.content, .header{
+	width: 100%;
 }
 
 }

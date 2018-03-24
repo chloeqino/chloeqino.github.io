@@ -131,21 +131,47 @@
       var bgcolor=document.getElementById('pastel_color');
        var a=document.getElementById('link');
        var num2=num+100;
-       if(num2>360) {
-        num2=num-100;
+       if(num2>360) 
+        {
+         num2=num-100;
        }
-       huetwo.innerHTML=num2;
-       var num3=Math.floor((num+num2)/2);
-     var hue2='hsl('+num2+',43%,95%)';
-    hue.innerHTML=num;
-      bgcolor.style.background='linear-gradient(130deg,hsl('+num+' ,43%, 95%),'+hue2+')';
+        huetwo.innerHTML=num2;
+        var num3=Math.floor((num+num2)/2);
+        var hue2='hsl('+num2+',43%,95%)';
+       hue.innerHTML=num;
+       bgcolor.style.background='linear-gradient(130deg,hsl('+num+' ,43%, 95%),'+hue2+')';
        hue.style.backgroundColor= 'hsl('+num+',43%,95%)'; 
        huetwo.style.backgroundColor=hue2;    
-      bgcolor.style.borderColor=bgcolor.style.backgroundColor;
-      bgcolor.style.borderStyle='solid';
-      h2.style.color='hsl('+num3+' ,30%, 60%)';
-      a.style.color= h2.style.color;
-      a.style.textDecorationColor= a.style.color;
+       bgcolor.style.borderColor=bgcolor.style.backgroundColor;
+       bgcolor.style.borderStyle='solid';
+       h2.style.color='hsl('+num3+' ,30%, 60%)';
+       a.style.color= h2.style.color;
+       a.style.textDecorationColor= a.style.color;
 
     }
+
+
+
+
+
+function checkIt(obj){
+  var a=obj.value;
+var c=document.getElementById('checking');
+var check=["You chose the wrong answer","Correct XD"];
+//c.innerHTML=a;
+c.style.color="white";
+if (a==="wrong") {
+c.style.backgroundColor="#F66D6D";
+c.innerHTML=check[0];
+
+}
+else if (a==="correct") {
+ c.style.backgroundColor="#6DF697"; 
+ c.innerHTML=check[1];
+}
+
+}
+
+
+
       
