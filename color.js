@@ -172,6 +172,19 @@ else if (a==="correct") {
 
 }
 
+function colorStar(sl) {
+  var star=document.getElementById('star');
+  var h=50;
+  
+  setInterval(fancystar,95);
+  function fancystar()
+  {
+   
+   h+=2;
+   
+    star.style.color="hsl("+h+sl;
 
+  }
+}
 
       
