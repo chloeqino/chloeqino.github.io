@@ -133,5 +133,7 @@ select{
 	width: 75%;
 	min-height: 12px;
 }
-
+p{
+	padding: 0 25px;
+}
 }
