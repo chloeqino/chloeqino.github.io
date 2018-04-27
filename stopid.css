@@ -1,10 +1,5 @@
 
-media only screen and (orientation: portrait) 
-{
-.search-id{
-	min-width: 100%;
-}
-}
+
 * {
 box-sizing: border-box;
 padding: 0;
@@ -118,3 +113,9 @@ body{
 	background-image: none;
 }
 } 
+@media only screen and (orientation: portrait) 
+{
+.search-id{
+	min-width: 100%;
+}
+}
