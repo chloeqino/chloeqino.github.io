@@ -1,0 +1,115 @@
+
+
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+html{
+	height: 100%;
+}
+body{
+padding: 0;
+margin: 0;
+height: 100%;
+background-image: url("bdimage.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+
+
+}
+
+.search-id{
+     padding-bottom: 24px;
+	text-align: center;
+	font-family: "Courier New";
+	width: 100%;
+	margin: 12px auto 0 auto;
+	max-width: 500px;
+	background-color: white;
+	border: 2px solid #98D4C3;
+}
+.search-id h1{
+	background-color: #98D4C3;
+	color: white;
+	display: block;
+	font-size: 170%;
+	font-weight: 600;
+	letter-spacing: 0.07em;
+	padding: 4px 3px;
+}
+.search-id #id{
+	font-weight: 600;
+	margin-top: 12px;
+
+	text-align: center;
+}
+
+p{
+	padding:0 10px;
+}
+.search-id p a{
+	color: #E7AAD2;
+	font-weight: 500;
+	transition-duration: 0.7s;
+}
+.search-id p a:hover{
+	font-weight: 600;
+	text-decoration: none;
+}
+select{
+	margin-top: 12px;
+	-webkit-appearance: none;
+ -moz-appearance: none;
+   appearance: none;   
+   border:3px solid #D3CBC9;
+}
+select option{
+	padding: 8px 9px;
+	 font-size: 14px;
+     cursor: pointer;
+}
+
+select option:active{
+	background-color: aqua;
+}
+
+select:focus{
+	outline: 0;
+}
+button{
+	background-color: #98D4C3;
+	color: white;
+	border:none;
+	font-size: 17px;
+	padding: 10px 27px;
+	-webkit-appearance: none;
+ -moz-appearance: none;
+   appearance: none;
+   margin-top: 17px;
+   cursor: pointer; 
+   border-radius: 12px;
+}
+button:hover{
+	box-shadow: 2px 5px 3px #FCF8F3;
+}
+button:focus{
+	outline: 0;
+}
+::selection{
+	background-color: #C59AD1;
+}
+@media only screen and (max-width: 418px) 
+{
+.search-id{
+	margin-top: 0;
+	border:none;
+}
+.search-id h1{
+	font-size: 150%;
+	letter-spacing: 0.04em;
+}
+body{
+	background-image: none;
+}
+} 
