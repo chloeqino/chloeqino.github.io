@@ -133,6 +133,9 @@ select{
 	width: 75%;
 	min-height: 12px;
 }
+option{
+	text-align: center;
+}
 p{
 	padding: 0 25px;
 }
