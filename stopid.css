@@ -113,9 +113,20 @@ body{
 	background-image: none;
 }
 } 
-@media only screen and (orientation: portrait) 
-{
-.search-id{
-	min-width: 100%;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  	.search-id{
+	margin-top: 0;
+	border:none;
+}
+.search-id h1{
+	font-size: 150%;
+	letter-spacing: 0.04em;
+}
+body{
+	background-image: none;
 }
 }
