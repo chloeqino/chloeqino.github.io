@@ -22,6 +22,10 @@ id.innerHTML=stopid;
             id.innerHTML=stopid;
  		 		x='52633';
  	}
+ 	else if (y==="ws2ohlone"){
+ 		 id.innerHTML=stopid;
+ 		 		x='55277';
+ 	}
  	//create a link
  	var text=document.createTextNode(stopid);
 
