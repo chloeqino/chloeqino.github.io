@@ -20,11 +20,11 @@
 </head>
 <body>
 
-<div class="search-id">
+<div class="search-id" id="search-id">
 	<h1>What do you want to do?</h1>
 
      <form id="myForm">
-	     <select name="location" size="3">
+	     <select name="location" size="4" id="select">
 	   	  <option value="ohlone2home" selected>Ohlone College to Home</option>
 	   	   
 	   	  <option value="jollibee2home">Jollibee To Home</option>
@@ -35,12 +35,15 @@
 	   
       </form>
 
-     <button onclick="myFunction()">Go</button>
+     <button onclick="myFunction('Stop ID: ')">Go</button>
       <p id="id"></p>
       <br>
-      <p>Go to <a href="https://511.org/" target="_blank">511.org</a> to find out the departure time</p>
+      <p>Go to <a href="https://511.org/transitdepartures/00000" target="_blank">511.org</a> to find out the departure time</p>
 </div>
+<script>
+	newLink('search-id');
 
+</script>
 </body>
 
 </html>
