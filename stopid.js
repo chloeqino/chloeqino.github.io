@@ -40,20 +40,3 @@ id.appendChild(newA);
 
  }
 
- function newLink(x){
-     var box = document.getElementById(x);
- 	
- 	var id=document.getElementById('id');
- 	var select=document.getElementById('select');
- 	var option = document.createElement('option');
- 	select.appendChild(option);
- 	var value=document.createAttribute('value');
- 	value.value='home2ohlone';
- 	option.setAttributeNode(value);
- 	var newopt=document.createTextNode('Home To Ohlone College');
- 	option.appendChild(newopt);
- 	
- 	
- 	
- 	
- }
