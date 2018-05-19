@@ -5,7 +5,7 @@ padding: 0;
 margin: 0;
 }
 body{
-	padding: 0;
+	padding: 18px 0 0 0;
 	margin: 0 0 0px 0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
@@ -77,7 +77,7 @@ left: 8px;
 
 .header h2:after{
 	clear: both;
-	content: " ";
+	content: "";
 	display: table;
 }
 .header ul {
@@ -287,20 +287,21 @@ z-index: 1;
 #icon>a{
 	text-decoration: none;
 }
-#fa{
+#fa,#center a{
 	
 	text-decoration:none;
 	
 	color: #8AB8A9;
 	font-weight: 400;
 }
-#fa:hover{
+#fa:hover, #center a:hover{
 	text-decoration: underline;
 
   
 	font-weight: 500;
      
 }
+
 h3{
     padding-bottom: 9px;
 	padding-top:12px;
@@ -446,6 +447,7 @@ section{
     transition-duration: 0.4s;
     cursor: pointer;
     letter-spacing: 0.04em;
+    background-clip: padding-box;
 }
 
 #pink a{
@@ -484,6 +486,22 @@ section{
 }
 #blue2 a{
 	color: #A0C1CB;
+}
+#green3 a{
+	color: #88C9B7;
+}
+#purple3 a{
+	color: #B29BC1;
+}
+#purple3 a:hover{
+	background-color: #B29BC1;
+	color: white;
+	border-color: #B29BC1;
+}
+#green3 a:hover{
+	background-color: #88C9B7;
+	color: white;
+	border-color: #88C9B7;
 }
 #blue2 a:hover{
 	background-color: #A0C1CB;
@@ -565,6 +583,7 @@ color: white;
 }
 /*style the footer seection*/
 footer{
+	display: block;
 	font-family: sans-serif;
 	font-size: 14px;
 	grid-area: footer;
@@ -581,7 +600,8 @@ footer{
     -webkit-user-select: none;
     -moz-user-select: none; /* Firefox 2+ */
     -ms-user-select: none; /* IE 10+ */
-   -webkit-appearance: none;
+    -webkit-appearance: none;
+
 }
 
 
