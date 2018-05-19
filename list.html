@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List Type</title>
+	<link rel="stylesheet" type="text/css" href="list.css"> 
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<p><label for="input">Please enter a number from 1 to 12:</label><br><br>
+			<input id="input" type="number" max="12" min="1" required>
+			<br>
+			<p id="error"></p>
+			<ul>
+			<li>Starry Night</li>
+			<li>Marry land</li>
+			<li>Auroua</li>
+		</ul><br>
+<button onclick="valid()">Submit</button>
+	</div>
+<script type="text/javascript">
+	function valid(){
+var inpObj = document.getElementById('input');
+var er=document.getElementById("error");
+if (!inpObj.checkValidity()) {
+er.style.display="block";
+er.innerHTML=inpObj.validationMessage;
+er.style.color="#FD2267";
+}
+else{
+	er.innerHTML="You entered "+input.value+" !";
+	er.style.color="#22FD29";
+}
+	
+}
+</script>
+</body>
+</html>

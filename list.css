@@ -1,0 +1,93 @@
+body{
+	font-family: sans-serif;
+	background-color: black;
+	background-image: url(galaxy.jpg);
+	background-size: cover;
+}
+.container {
+	position: absolute;
+	margin: 0;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border: 2px dashed #FFFFD0;
+	width: 45%;
+	float: left;
+	height: auto;
+    background: radial-gradient(#5E6BAA 50%,#775EAA,#AA5EA4);
+    background-clip: padding-box;
+    color: #FFF6C4;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+    animation-name: glow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    text-align: center;
+
+}
+
+
+ul{
+	display: none;
+	width: 60%;
+	margin: auto;
+	
+text-align: left;
+	
+	
+	font-weight: lighter;
+	letter-spacing: 0.07em;
+	list-style: none;
+}
+ul li{
+	padding-left: 23%;
+	margin:auto;
+}
+li:before{
+	content: "\272D";
+	padding-right: 7px;
+	color: #FFF6C4;
+
+}
+button{
+	margin: 12px;
+}
+#error{
+	padding: 2px 0 !important;
+	color: #FD2267;
+}
+input[type=number]{
+	width: 20%;
+	padding: 6px 2px;
+	text-align: center;
+	font-size: 16px;
+	color: #AA5EA7;
+	box-shadow: none;
+	border-radius: 12px;
+	transition: width 0.4s ease-in-out;
+	margin: 0;
+	caret-color:yellow;
+}
+input[type=number]:focus{
+	outline: none;
+	background-color: #FBFBEE;
+	
+}
+button{
+	border:none;
+	background-color: #F6FBCF;
+	padding: 11px 16px;
+	font-size: 15px;
+	color: #8B50A8;
+	border-radius: 12%;
+	cursor: pointer;
+}
+button:focus{
+	outline: none;
+}
+@keyframes glow{
+	0%{ background: radial-gradient(#5E6BAA 50%,#775EAA,#AA5EA4);}
+	25%{ background: radial-gradient(#5E6BAA 53%,#775EAA,#AA5EA4);}
+	75%{ background: radial-gradient(#5E6BAA 56%,#775EAA,#AA5EA4);}
+	100%{ background: radial-gradient(#5E6BAA 54%,#775EAA,#AA5EA4);}
+}
