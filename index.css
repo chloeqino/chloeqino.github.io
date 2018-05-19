@@ -14,13 +14,18 @@ th{
 	background-color: #B490BF;
 	color: white;
 	font-weight: 400;
-	letter-spacing: 0.04em;
-
+	letter-spacing: 0.06em;
+  
 }
 td{
 	font-weight: 200;
 }
-
+tr:nth-child(2n+3){
+	background-color:#FCFBF8;
+}
+a{
+	cursor: pointer;
+}
 td a:link{
 	color: #9FDEEB;
 }
