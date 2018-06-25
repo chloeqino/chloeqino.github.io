@@ -245,7 +245,7 @@ function padZeros(x,y){
   }
   return numOne;
 }
-function myMap(){
+ function myMap(){
   var m = document.getElementById('map');
   var flowers = new Map();
   flowers.set('sakura', 'pink');
