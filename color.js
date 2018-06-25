@@ -81,7 +81,13 @@
 
       function heartColor() {
      var y=document.getElementById("choosenum").value;
-        
+         var btn = document.getElementById('change-color');
+         if (y===""||y===null) {
+           btn.setAttribute('disabled');
+           btn.style.color='grey';
+           btn.style.borderColor=btn.style.color;
+         }
+
         var x=Math.floor(Math.random()*7)+1;
         var valid= document.getElementById('valid');
         var num_y = parseInt(y);
@@ -119,6 +125,7 @@
         else if(x==7 || y==7){
           heart.style.color="#FAFAA6";
         }
+
          valid.style.color=heart.style.color;
          
        
@@ -137,6 +144,7 @@
        }
         huetwo.innerHTML=num2;
         var num3=Math.floor((num+num2)/2);
+        console.log(num3);
         var hue2='hsl('+num2+',43%,95%)';
        hue.innerHTML=num;
        bgcolor.style.background='linear-gradient(130deg,hsl('+num+' ,43%, 95%),'+hue2+')';
@@ -157,19 +165,33 @@
 function checkIt(obj){
   var a=obj.value;
 var c=document.getElementById('checking');
+var c2=document.getElementById('checking-2');
 var check=["You chose the wrong answer","Correct XD"];
+var one=document.getElementById('an-1');
+var two=document.getElementById('an-2');
 //c.innerHTML=a;
 c.style.color="white";
 if (a==="wrong") {
 c.style.backgroundColor="#F66D6D";
 c.innerHTML=check[0];
+one.style.backgroundColor="#F66D6D";
 
 }
 else if (a==="correct") {
  c.style.backgroundColor="#6DF697"; 
  c.innerHTML=check[1];
+ one.style.backgroundColor="#6DF697";
 }
+else if (a==="wrong-2") {
+c2.style.backgroundColor="#F66D6D";
+c2.innerHTML=check[0];
 
+}
+else if (a==="correct-2") {
+  c2.style.backgroundColor="#6DF697"; 
+ c2.innerHTML=check[1];
+}
+two.style.backgroundColor=c2.style.backgroundColor;
 }
 
 function colorStar(sl) {
@@ -186,5 +208,50 @@ function colorStar(sl) {
 
   }
 }
+function accountInfo(){
+  var y=document.getElementById('new_code');
+var x=document.getElementById('string');
+var string="<font color='aqua'>blue</font>";
+x.innerHTML=string;
+var newX=string.replace("<","&lt;");
 
-      
+y.innerHTML=newX;
+var box=document.getElementById('practice_canvas');
+var font=document.createElement('font');
+font.setAttribute('color','#C2B4DC');
+font.setAttribute('face','times');
+var i=document.createElement('i');
+font.textContent="Lavander Paris";
+i.appendChild(font);
+box.appendChild(i);
+box.removeChild(y);
+var myDog ={
+  name: "Yuki",
+  color: "white",
+  age: 5
+}
+console.log(myDog.color);
+
+}
+function padZeros(x,y){
+  var numOne = x.toString();
+  
+  var strLength = numOne.length;
+  console.log(strLength);
+  var numZeros = y - strLength;
+  console.log(numZeros);
+  for (var i = 0; i < numZeros; i++) {
+    numOne ="0"+ numOne;
+  }
+  return numOne;
+}
+function myMap(){
+  var m = document.getElementById('map');
+  var flowers = new Map();
+  flowers.set('sakura', 'pink');
+  flowers.set('iris','purple');
+  for (var [key, value] of flowers){
+  console.log(key + " is " + value);
+  }
+  m.innerHTML=flowers.size;
+}

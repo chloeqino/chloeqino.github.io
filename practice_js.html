@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
 	<title>Just For Fun</title>
 	<link rel="stylesheet" type="text/css" href="color.css">
@@ -11,14 +11,16 @@
 
 
 
-<script src="color.js"></script>
+<script src="color.js">
+	
+</script>
 
 	
 </head>
 <body>
 	
 	<div class="header">
-		<a href="#"><h5><font id="font-0">J</font><font id="font-1">s </font><font id="font-2">Pra</font><font id="font-3">ct</font><font id="font-4">ic</font><font id="font-5">e</font></h5></a>
+		<a href="#"><h5>Javascript Practice</h5></a>
 <div class="menu">
 	
 	<i class="fa fa-bars"></i>
@@ -95,24 +97,67 @@ Lightness: 95%<br>
 <br><hr><center>
 	<input type="number" id="choosenum" max="7" min="1"><br>
 	<br>
-	<button onclick="heartColor()">Click Me</button><br>
+	<button onclick="heartColor()" id="change-color">Click Me</button><br>
 <div id="heart">&hearts;</div>
 <p id="valid"> </p></center><br>
-<hr id="dmv"><br>
-<div class="form">
-	<b>You can help keep the driver behind you at a safe distance by:</b> <br>
 
-	<input type="radio" name="dmv" id="answer" onclick="checkIt(this)" value="wrong">
-Driving 3-5 mph faster than the car behind<br>
-     <input type="radio" name="dmv" id="answer" onclick="checkIt(this)" value="wrong">
-     Driving 3-5 mph slower than the car behind<br>
-     <input type="radio" name="dmv" id="answer" onclick="checkIt(this)" value="correct">
-     Keeping a steady speed<br>
-     <div id="checking"></div>
+<!--###DMV Test###-->
+
+<hr id="dmv">
+<br>
+<div class="prepare-test">
+	<h1>2018 DMV Practice Test</h1>
+   <div class="number-an">
+	<div id="an-1">1</div>
+	<div id="an-2">2</div>
+	<div id="an-3">3</div>
+	<div id="an-4">4</div>
+	<div id="an-5">5</div>
+	<div id="an-6">6</div>
+   </div>
+    <div class="practice_test">
+        <div class="form">
+	    <b>You can help keep the driver behind you at a safe distance by:</b> <br>
+
+	     <input type="radio" name="dmv" id="answer" onclick="checkIt(this)" value="wrong">
+           Driving 3-5 mph faster than the car behind<br>
+        <input type="radio" name="dmv" id="answer" onclick="checkIt(this)" value="wrong">
+          Driving 3-5 mph slower than the car behind<br>
+        <input type="radio" name="dmv" id="answer" onclick="checkIt(this)" value="correct">
+         Keeping a steady speed<br>
+         <div id="checking"></div>
      
 
 
-</div>
+       </div>
+        <div class="form">
+	
+	     <b style="text-align: center;">What type of sign is this?</b><br>
+
+	     <img src="sign.svg" id="sign">
+	     <div class="sign_choose">
+		
+		  <input type="radio" name="dmv2" id="stop" onclick="checkIt(this)" value="wrong-2">
+		
+         <label for="stop">Stop</label>
+         <br>
+     
+     
+          <input type="radio" name="dmv2" id="yield" onclick="checkIt(this)" value="correct-2">
+     
+          <label for="yield">Yield</label>
+           <br>
+  
+          <input type="radio" name="dmv2" id="hama" onclick="checkIt(this)" value="wrong-2">
+
+         <label for="hama">Hazardous materials</label>
+          <br>
+
+          <div id="checking-2"></div>
+	     </div>
+     </div>
+    </div>
+   </div>
 <br>
 <hr id="animation">
 <div class="frame">
@@ -120,7 +165,14 @@ Driving 3-5 mph faster than the car behind<br>
 	
 
 </div>
-
+<br>
+<hr id="class_function">
+<div id="practice_canvas">
+<p id="string"></p>
+<p id="new_code"></p>
+<p id="numstring"></p>
+<p id="map"></p>
+</div>
 <!--Contact Info-->
 <hr class="contact_info">
 <footer>
@@ -137,6 +189,27 @@ Driving 3-5 mph faster than the car behind<br>
 
 <script>
 	colorStar(",79%,89%)");
+	accountInfo();
+	var num=document.getElementById('numstring');
+	num.innerHTML=padZeros(21,4);
+    myMap();
+    var header = document.getElementsByTagName('h5');
+    
+    var h5=header[0].innerText;
+    //console.log(h5[1]);
+    var h5text=h5;
+    header[0].innerHTML="";
+   console.log(h5text);
+   for (var i = 0; i < h5text.length; i++) {
+   	var fontElem = document.createElement('font');
+   	var hsl="hsl(" + (15 * i + 279) + ",58%,82%)";
+
+   	//console.log(hsl);
+   	fontElem.style.color=hsl;
+   	fontElem.innerHTML=h5text[i];
+   	//header[0].innerHTML="";
+   	header[0].appendChild(fontElem);
+   }
 </script>
 
 </body>
