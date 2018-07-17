@@ -347,6 +347,10 @@ option{
 	font-size: 100%;
 
 }
+form label{
+	display: initial;
+	line-height: 2px;
+}
 } 
 @media only screen 
   and (min-device-width: 320px) 
