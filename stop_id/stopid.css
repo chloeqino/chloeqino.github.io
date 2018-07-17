@@ -340,6 +340,10 @@ span#or{
 select
 {
 	width: 96%;
+	font-size: 50px;
+}
+option{
+	font-size: 50px;
 }
 } 
 @media only screen 
@@ -362,7 +366,7 @@ select
 
 
 select{
-	
+	font-size: 50px;
 	min-height: 12px;
 }
 option{
