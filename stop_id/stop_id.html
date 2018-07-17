@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Search Stop Id</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_package/favicon-16x16.png">
+<link rel="manifest" href="favicon_package/site.webmanifest">
+<link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="favicon_package/favicon.ico">
+<meta name="msapplication-TileColor" content="#97f5e9">
+<meta name="msapplication-config" content="favicon_package/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" type="text/css" href="stopid.css">
+<script src="stopid.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+  <h1>Where are you heading?</h1>
+<div class="search-id" id="search-id">
+	
+   <!--####col 1####-->
+      <div class="col-1">
+        <form id="myForm">
+          <label for="select">Choose your destination:
+          </label><br>
+	      <select name="location" size="5" id="select">
+	   	  <option value="ohlone2home" selected>Ohlone College to Home</option>
+	   	  <option value="jollibee2home">Jollibee To Home</option>
+	   	  <option value="home2ul">Home to Union Landing</option>
+         <option value="home2ohlone">Home To Ohlone College</option>
+         <option value="ws2ohlone">Warm Spring To Ohlone College</option>
+	      </select>
+         <br>
+	   
+        </form>
+
+         <button onclick="myFunction('Stop ID: ')">Go</button>
+         <!--generate the link base on the user input-->
+         <p id="id"></p>
+         <br>
+      
+    </div>
+       <!--####col 2####-->
+  <div class="col-2">
+     
+        <form name="SearchID" id="myForm2" method="get">
+        	<label for="inputid">Enter the 5-digit stop id:
+      	 </label><br>
+          <p id="err"></p>
+      	   <input type="text" name="stopid" placeholder="#####" id="inputid">
+
+      	  <input type="submit" value="Submit">
+      	 
+          </form><br>
+          <!--link to the 511.org-->
+           <p id="row-2">Go to <a href="https://511.org/transitdepartures/00000" target="_blank">511.org</a> to find out the departure time</p>
+
+          <span id="or">or</span>
+ </div>
+</div>
+<!--Contact Info-->
+<footer>
+  <p id="copyright">Copyright &copy; Qinyu Chen 2018</p>
+  <div id="contact-info">
+    <a href="https://www.instagram.com/bertha.cfish/" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://github.com/chloeqino" target="_blank"><i class="fa fa-github"></i></a>
+    <a href="https://twitter.com/chen_qinyu" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://codepen.io/chloeqino/" target="_blank"><i class="fa fa-codepen"></i></a>
+  </div>
+</footer>
+<script>
+	var formtwo = document.getElementById('myForm2');
+	formtwo.onsubmit=myLink;
+    var userinput = formtwo.elements[0];
+    
+</script>
+</body>
+
+</html>

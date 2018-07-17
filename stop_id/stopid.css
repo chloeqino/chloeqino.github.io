@@ -1,0 +1,376 @@
+
+
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+html{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+     
+}
+body{
+ background-attachment: fixed;	
+padding: 0 0 89px 0;
+
+margin: 0;
+height: 100%;
+background-image: url("bdimage.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position: 90% 3%;
+
+}
+
+.search-id{
+	min-height: 400px;
+	z-index:0;
+     padding-bottom: 20px;
+	text-align: center;
+	font-family: "Courier New";
+	width: 100%;
+	margin: 0px auto 0px auto;
+	/*max-width: 850px;*/
+	background-color: rgba(255,255,255,0.6);
+	border: 2px solid #F8F9ED;
+	display: table;
+	backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
+	position: relative;
+}
+h1{
+	font-family: "Courier New";
+    text-shadow: 2px 2px 1px #C6C2C4;
+	width: 100%;
+	background-color: rgba(22,22,13,0.23);
+	color: white;
+	display: block;
+	font-size: 170%;
+	font-weight: 600;
+	letter-spacing: 0.07em;
+	padding: 24px 3px;
+	text-align: center;
+}
+.search-id #id{
+	font-weight: 600;
+	margin-top: 12px;
+     color: #8A6E72;
+	text-align: center;
+}
+
+p{
+	padding:0 10px;
+}
+.search-id p a{
+	color: #598152;
+	font-weight: 500;
+	transition-duration: 0.7s;
+}
+.search-id p a:hover{
+	font-weight: 600;
+	text-decoration: none;
+}
+select{
+	
+	-webkit-appearance: none;
+ -moz-appearance: none;
+   appearance: none;   
+   border:3px solid #D3CBC9;
+}
+select option{
+    appearance:none;
+    -webkit-appearance: none;
+ -moz-appearance: none;
+	padding: 8px 9px;
+	 font-size: 14px;
+     cursor: pointer;
+}
+
+
+select:focus{
+	outline: 0;
+}
+button{
+	background-color: #598152;
+	color: white;
+	border:none;
+	font-size: 17px;
+	padding: 10px 27px;
+	-webkit-appearance: none;
+ -moz-appearance: none;
+   appearance: none;
+   margin-top: 17px;
+   cursor: pointer; 
+   border-radius: 12px;
+}
+button:hover{
+	box-shadow: 2px 5px 3px #FCF8F3;
+}
+button:focus{
+	outline: 0;
+}
+form#myForm2{
+	margin-top: 25px;
+}
+input[type="submit"]{
+background-color: #936A99;/*#E0B1DC;*/
+color: white;
+-webkit-appearance: none;
+ -moz-appearance: none;
+   appearance: none;
+   cursor: pointer;
+   border: none;
+   font-size: 15px;
+   padding: 5px 7px;
+   border-radius: 10%;
+   transition-duration: 0.4s;
+}
+input[type="text"]{
+font-size: 15px;
+   padding: 4px 2px;
+   -webkit-appearance: none;
+ -moz-appearance: none;
+   appearance: none;
+   text-align: center;
+   color: #7F7771;
+}
+input[type='text']::placeholder
+{
+	color:#D2D0D1;
+	font-size: 14px;
+	font-weight: 100;
+
+}
+input[type="text"]:focus
+{
+	outline: none;
+	background-color: seashell;
+}
+input[type='submit']:focus
+{
+outline: none;
+
+}
+input[type='submit']:hover
+{
+	box-shadow: 1px 2px seashell;
+}
+input[type="text"]:active
+{
+	background-color: white;
+}
+input:-webkit-autofill 
+{
+    -webkit-box-shadow: 0 0 0px 1000px seashell inset !important;
+    -webkit-text-fill-color: #7F7771 !important;
+}
+p#err
+{
+color: #F74B71;
+font-size: 13px;
+}
+::selection{
+	background-color: #C59AD1;
+	color: seashell;
+}
+
+#id a{
+	font-weight: 600;
+	color: #936A99;
+	border: 2px solid;
+	padding: 2px 3px;
+	border-radius: 10%;
+	text-decoration: none;
+	
+}
+#id a:hover{
+	border-style: dashed;
+}
+span#or{
+	color: #598152;
+	font-size: 15px;
+	padding: 4px;
+	background-color: rgba(255,245,235,0.7);
+	border: 2px dashed;
+	font-weight: 800;
+	display: table;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-left: -17px;
+    margin-top: -18px;
+    border-radius: 50%;
+    z-index: 100;
+    background-clip: padding-box;
+    user-select: none;
+}
+form label{
+	display: table;
+    margin: 0 auto 0.01px auto;
+    font-weight: 700;
+    color: #595151;
+}
+[class|="col"]
+{  float: left;
+   width:50%;
+   text-align: center;
+  display: table-column;
+  position: relative;
+  
+margin-top: 25px;
+  background-color: rgba(255,255,255,0.5);
+  padding: 11px;
+  height: 322px;
+  z-index: 1;
+  background-clip: padding-box;
+}
+.col-1{
+	border-right: 2px solid transparent;
+}
+.col-2{
+	border-left: 2px solid transparent;
+
+	
+}
+form#myForm2, p#row-2
+{
+display: block;
+height: 50%;
+width: 100%;
+}
+.search-id:after{
+	clear: both;
+	content: "";
+	display: table;
+}
+footer
+{
+	height: 40%;
+ margin-top: 0px;
+ margin-bottom: 0;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center; 
+ font-family:"Trebuchet MS";
+font-weight: 500;
+color: rgba(255,255,254,0.9);
+display: table;
+background-color: rgba(12,12,3,0.25);
+backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(4px);
+padding: 22px 5px;
+position:relative;
+bottom: 0;
+width: 100%;
+transition-duration: 0.6s: 
+border-top: 25px solid rgba(22,22,13,0.4);
+border-bottom: none;
+background-clip: padding-box;
+text-shadow: 1px 1px 3px #BBB6B6;
+}
+p#copyright
+{
+
+	margin-top: 44px;
+ letter-spacing: 0.07em;
+}
+div#contact-info{
+	margin-top: 22px;
+	font-size: 30px;
+    letter-spacing: 7px;
+}
+footer a{
+	color: rgba(255,255,254,0.75);
+	text-decoration: none;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+    transition-duration: 0.6s;
+}
+footer a:hover
+{
+	color: rgba(252,255,253,0.97);
+	font-size: 32px;
+}
+@media only screen and (max-width: 418px) 
+{
+.search-id{
+	margin: 2px auto 0px auto;
+	padding-bottom: 2px;
+	border:none;
+	width: 97%;
+}
+h1{
+	font-size: 150%;
+	letter-spacing: 0.04em;
+}
+body{
+	background-repeat: repeat-y;
+}
+
+[class|="col"]{
+	float: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+}
+.col-1{
+	border-right: none;
+	border-bottom: 2px solid transparent;
+}
+.col-2{
+	border-left: none;
+	border-top:2px solid transparent; 
+}
+input[type='text']{
+	width: 95%;
+	display: table;
+	margin-bottom: 2px;
+	margin-left: auto;
+	margin-right: auto;
+}
+span#or{
+	top: 0;
+	margin-top: -13px;
+	left: 50%;
+	background-color: rgba(255,242,231,1);
+}
+} 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  	.search-id{
+	margin-top: 0;
+	border:none;
+}
+.search-id h1{
+	font-size: 19px;
+	letter-spacing: 0.04em;
+}
+[class|="col"]{
+	float: none;
+	width: 100%;
+}
+
+select{
+	
+	min-height: 12px;
+}
+option{
+	text-align: center;
+}
+p{
+	padding: 0 25px;
+}
+input[type='text']
+{
+	display: block;
+}
+input[type='submit']
+{
+	display: block;
+}
+}
