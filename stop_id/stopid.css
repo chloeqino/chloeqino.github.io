@@ -368,7 +368,6 @@ option{
 	width: 100%;
 }
 
-
 select{
 	font-size: 50px;
 	min-height: 12px;
@@ -381,7 +380,8 @@ p{
 }
 input[type='text']
 {
-	display: block;
+	display: table;
+	background-clip: padding-box;
 }
 input[type='submit']
 {
