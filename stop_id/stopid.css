@@ -211,7 +211,7 @@ form label{
     margin: 0 auto 0.01px auto;
     font-weight: 700;
     color: #595151;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 [class|="col"]
 {  float: left;
