@@ -97,7 +97,7 @@ button{
 	color: white;
 	border:none;
 	font-size: 17px;
-	padding: 10px 27px;
+	padding: 5px 22px;
 	-webkit-appearance: none;
  -moz-appearance: none;
    appearance: none;
@@ -211,6 +211,7 @@ form label{
     margin: 0 auto 0.01px auto;
     font-weight: 700;
     color: #595151;
+    background-color: transparent;
 }
 [class|="col"]
 {  float: left;
@@ -336,6 +337,10 @@ span#or{
 	left: 50%;
 	background-color: rgba(255,242,231,1);
 }
+select
+{
+	width: 96%;
+}
 } 
 @media only screen 
   and (min-device-width: 320px) 
@@ -347,13 +352,14 @@ span#or{
 	border:none;
 }
 .search-id h1{
-	font-size: 14px;
+	font-size: 19px;
 	letter-spacing: 0.04em;
 }
 [class|="col"]{
 	float: none;
 	width: 100%;
 }
+
 
 select{
 	
@@ -374,5 +380,4 @@ input[type='submit']
 	display: block;
 	margin: auto;
 }
-	  
 }
