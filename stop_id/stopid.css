@@ -370,6 +370,9 @@ option{
 	margin-top: 0;
 	border:none;
 }
+body{
+	background-attachment: scroll;
+}
  h1{
 	font-size: 19px;
 	letter-spacing: 0.04em;
