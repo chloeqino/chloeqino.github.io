@@ -371,7 +371,7 @@ option{
 	border:none;
 }
 body{
-	background-attachment: scroll;
+	background-attachment: local;
 }
  h1{
 	font-size: 19px;
