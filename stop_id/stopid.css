@@ -371,7 +371,7 @@ option{
 	border:none;
 }
 body{
-	background-attachment: local;
+	background-attachment: fixed;
 	background-repeat: repeat-y;
 
 }
