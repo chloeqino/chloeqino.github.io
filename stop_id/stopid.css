@@ -173,6 +173,8 @@ p#err
 {
 color: #F74B71;
 font-size: 13px;
+ display: table;
+ margin: 0 auto;
 }
 ::selection{
 	background-color: #C59AD1;
