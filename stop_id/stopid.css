@@ -393,6 +393,7 @@ img#bgimg
 	height: 100%;
 	display: block;
 	z-index: -2;
+	object-fit: cover;
 }
 #copyright
 {
