@@ -393,7 +393,7 @@ footer
 body{
 	background-attachment: initial;
 		background-image: url("bdimage.jpg");
-
+background-size: 100% 100%;
 
 }
  h1{
