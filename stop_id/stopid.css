@@ -1,3 +1,5 @@
+
+
 * {
 box-sizing: border-box;
 padding: 0;
@@ -360,7 +362,7 @@ option{
 	margin-top: 0;
 	border:none;
 }
-.search-id h1{
+ h1{
 	font-size: 19px;
 	letter-spacing: 0.04em;
 }
