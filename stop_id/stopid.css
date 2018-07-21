@@ -391,7 +391,7 @@ footer
 	padding: 2px 2px;
 }
 body{
-	background-attachment: scroll;
+	background-attachment: initial;
 		background-image: url("bdimage.jpg");
 
 
