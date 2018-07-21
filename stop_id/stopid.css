@@ -20,7 +20,7 @@ background-image: url("bdimage.jpg");
 background-repeat:no-repeat;
 background-size:cover;
 background-position: 90% 3%;
-
+background-color: #D9E7BF;
 }
 
 .search-id{
@@ -115,6 +115,7 @@ button:focus{
 }
 form#myForm2{
 	margin-top: 25px;
+	width: 100%;
 }
 input[type="submit"]{
 background-color: #936A99;/*#E0B1DC;*/
@@ -239,9 +240,9 @@ form label{
 }
 form#myForm2, p#row-2
 {
-display: block;
+display: table;
 height: 50%;
-width: 100%;
+
 }
 .search-id:after{
 	clear: both;
@@ -375,13 +376,8 @@ option{
 	float: none;
 	width: 98%;
 }
-html, body
-{
-	height: auto;
-}
-body{
-	background-color: olive;
-}
+
+
 
 select{
 	font-size: 50px;
