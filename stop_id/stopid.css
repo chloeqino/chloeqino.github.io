@@ -388,7 +388,9 @@ footer
 }
 body{
 	background-attachment: scroll;
-	
+	background-color: transparent;
+	background-image: url("bdimage.jpg");
+
 
 }
  h1{
