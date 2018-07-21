@@ -383,6 +383,9 @@ option{
 	font-size: 12px;
 
 }
+body{
+	height: auto;
+}
 footer
 {
 	padding: 2px 2px;
