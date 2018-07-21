@@ -6,7 +6,7 @@ padding: 0;
 margin: 0;
 }
 html{
-	height: 100%;
+	
 	padding: 0;
 	margin: 0;
      
@@ -22,7 +22,14 @@ background-size:cover;
 background-position: 90% 3%;
 background-color: #D9E7BF;
 }
-
+#overlay{
+	background-color: rgba(22,22,13,0.29);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+	-webkit-backdrop-filter: blur(5px);
+}
 .search-id{
 	
 
@@ -44,7 +51,7 @@ h1{
 	font-family: "Courier New";
     text-shadow: 2px 2px 1px #C6C2C4;
 	width: 100%;
-	background-color: rgba(22,22,13,0.23);
+	background-color: rgba(25,21,10,0);
 	color: white;
 	display: block;
 	font-size: 170%;
@@ -253,7 +260,7 @@ height: 50%;
 }
 footer
 {
-	height: 40%;
+	height: auto;
  margin-top: 0px;
  margin-bottom: 0;
  margin-left: auto;
@@ -263,7 +270,7 @@ footer
 font-weight: 500;
 color: rgba(255,255,254,0.9);
 display: table;
-background-color: rgba(12,12,3,0.25);
+background-color: rgba(255,255,255,0);
 backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(4px);
 padding: 22px 5px;
@@ -370,9 +377,18 @@ option{
 	margin-top: 0;
 	border:none;
 }
+#copyright
+{
+	font-size: 12px;
+
+}
+footer
+{
+	padding: 2px 2px;
+}
 body{
-	background-attachment: fixed;
-	background-repeat: repeat-y;
+	background-attachment: scroll;
+	
 
 }
  h1{
