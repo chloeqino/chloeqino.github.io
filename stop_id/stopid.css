@@ -311,7 +311,7 @@ h1{
 	padding: 20px 1px;
 }
 body{
-	background-repeat: repeat-y;
+	background-repeat: no-repeat;
 }
 
 [class|="col"]{
