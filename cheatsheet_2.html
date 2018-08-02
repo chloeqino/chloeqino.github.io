@@ -185,6 +185,13 @@ menu.style.height = height+"px";
     else {
        console.log("not mobile")
        menu.style.display="block";
+       for (var i = 2; i < a.length; i++) 
+       {
+        a[i].onclick = function()
+     	{
+     		menu.style.display ="block";
+     	}
+       }
         menu.style.height="auto";
     }
 }
