@@ -162,6 +162,8 @@
 <script>
 	var bar = document.getElementById('bar');
 	var menu = document.getElementById('menu-list');
+	var a = menu.getElementsByTagName('a');
+	console.log(a.length);
 	function myFunction(x) {
     if (x.matches || window.screen.width <=568) { // If media query matches
         console.log("mobile");
@@ -170,7 +172,17 @@
         var height = window.screen.height - 55;
 console.log(height);
 menu.style.height = height+"px";
-    } else {
+	for (var i = 2; i < a.length; i++) 
+	{
+
+     	     a[i].onclick = function()
+     	     {
+     		menu.style.display ="none";
+
+     	    }
+       }
+    } 
+    else {
        console.log("not mobile")
        menu.style.display="block";
     }
