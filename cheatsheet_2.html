@@ -3,14 +3,14 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-
+<script src="cheatsheet.js"></script>
 	<title>Web Development Cheatsheet</title>
 	<meta name="keywords" content="HTML,CSS,JavaScript,Frontend,Cheatsheet,color picker">
  <meta name="description" content="cheatsheet for frontend development">
  
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#6184c9">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="shortcut icon" href="favicon_package/favicon.ico">
+<link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#6184c9">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,9 +25,10 @@
 	<!--Nav Bar-->
 	<div class="header"><nav>
 	<a href="cheatsheet_2.html" onclick="hide()"><h2 title="go to the top" onclick="hide()"><!--<i class="fa fa-file-text" aria-hidden="true"></i>-->&nbsp;<span id="titletext">Web Development CheatSheet</span><span id="title2">Cheatsheet</span></h2></a>
-	<ul>
+	<i class="fa fa-bars" id="bar"></i>
+	<ul id="menu-list">
 		<li><a href="cheatsheet_2.html">Home</a></li>
-		<li class="code"><a href="#" onclick="hide()"><font id="codefont">Code &lt; ></font></a>
+<li class="code"><a href="#" onclick="hide()" id="codefont">Code &lt; ></a>
         <div class="index">
 		  	<a href="#anchor-code2">Deflaut Values</a>
 		  	<a href="#anchor-right1">Embeding Files</a>
@@ -158,10 +159,30 @@
 	<footer onclick="hide()">&starf; ------ coded and designed by Qinyu Chen&nbsp;<font size="-5px" color="#B8C7C0">&bull; </font>2018 ------ &starf;<br><br></footer><br>
 	
 </div>
-<script src="cheatsheet.js">
+<script>
+	var bar = document.getElementById('bar');
+	var menu = document.getElementById('menu-list');
+	function myFunction(x) {
+    if (x.matches || window.screen.width <=568) { // If media query matches
+        console.log("mobile");
+        bar.onclick = displayMenu;
+        menu.style.display="none";
+        var height = window.screen.height - 55;
+console.log(height);
+menu.style.height = height+"px";
+    } else {
+       console.log("not mobile")
+       menu.style.display="block";
+    }
+}
 
-      
-
+var x = window.matchMedia("(max-width: 568px)");	
+   myFunction(x); // Call listener function at run time
+x.addListener(myFunction);
+    	
 </script>
+
+
+
 </body>
 </html>

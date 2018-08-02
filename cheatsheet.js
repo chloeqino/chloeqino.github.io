@@ -31,8 +31,29 @@ function dropDown() {
       x.style.display="none";
      y.style.color="#767680";
      arrow.style.color="#9A98AB";
+
 	}
 
-    
-
+ function displayMenu(e)
+ {
      
+     
+      if(menu.style.display==="block")
+      {
+        menu.style.display="none";
+
+        e.target.setAttribute("class","fa fa-bars");
+        var x=e.target.getAttribute('class');
+        console.log(x);
+
+      }
+      else{
+            menu.style.display="block";
+           
+            e.target.setAttribute("class","fa fa-times");
+         
+      }
+     
+       
+ }  
+
