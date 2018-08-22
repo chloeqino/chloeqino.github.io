@@ -3,11 +3,13 @@
 	"myA": [
          {
          	"name": "Regular Expressions",
-         	"url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions"
+         	"url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions",
+         	"color": "#D5A4A4"
          },
          {
          	"name": "Box Shadow Generator",
-         	"url": "https://www.cssmatic.com/box-shadow"
+         	"url": "https://www.cssmatic.com/box-shadow",
+         	"color": "#C9A4D5"
          }
          ]
 
