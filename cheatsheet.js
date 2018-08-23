@@ -57,3 +57,42 @@ function dropDown() {
        
  }  
 
+ function newA(jsonA)
+ {
+  var myLink = jsonA["myA"];
+    //console.log(myLink[0].name);
+for (var i = 0; i < myLink.length; i++) {
+  var li = document.createElement('li');
+  
+  ul.appendChild(li);
+  var a = document.createElement('a');
+  a.href = myLink[i].url;
+  a.textContent = myLink[i].name;
+  a.target = "_blank";
+  a.style.color = myLink[i].color;
+  a.setAttribute('id',('link'+i));
+  li.appendChild(a);
+
+   a.onmouseover = function(e)
+   {
+    e = e || window.event;
+    var linkID = e.target.getAttribute('id');
+    //console.log(linkAttr);
+    var index = linkID.slice(-1);
+    e.target.style.backgroundColor = myLink[index].color;
+    e.target.style.borderColor = myLink[index].color;
+    e.target.style.color = "white";
+   }
+   a.onmouseout = function(e)
+   {
+    e = e || window.event;
+    var linkID = e.target.getAttribute('id');
+    //console.log(linkAttr);
+    var index = linkID.slice(-1);
+    e.target.style.backgroundColor = "#FCFDFF"; 
+    e.target.style.color = myLink[index].color;
+   }
+
+}
+ }
+
