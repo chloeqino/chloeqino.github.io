@@ -10,7 +10,13 @@
          	"name": "Box Shadow Generator",
          	"url": "https://www.cssmatic.com/box-shadow",
          	"color": "#C9A4D5"
+         },
+         {
+            "name": "Google Charts",
+            "url": "https://developers.google.com/chart/",
+            "color": "#A4C8D5"
          }
+
          ]
 
 }
