@@ -60,7 +60,7 @@ function dropDown() {
  function newA(jsonA)
  {
   var myLink = jsonA["myA"];
-    //console.log(myLink[0].name);
+    
 for (var i = 0; i < myLink.length; i++) {
   var li = document.createElement('li');
   
