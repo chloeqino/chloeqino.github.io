@@ -15,6 +15,11 @@
             "name": "Google Charts",
             "url": "https://developers.google.com/chart/",
             "color": "#A4C8D5"
+         },
+         {
+            "name": "Regular Expressions tester",
+            "url": "https://regexr.com/",
+            "color": "#B9A4D5"
          }
 
          ]
