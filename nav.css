@@ -1,0 +1,54 @@
+nav{
+	width: 100%;
+	background-color: #FCFAFF;
+	float: left;
+	padding: 0 10%;
+}
+
+
+nav #logo{
+	width: 10%;
+	font-family: 'Ribeye Marrow','Garamond';
+	display: inline-block;
+	letter-spacing: 10%;
+	color: #6636CB;
+
+}
+nav div{
+	float: left;
+	padding: 10px 0;
+}
+nav:after{
+	display: table;
+	clear: both;
+	content:'';
+}
+nav #menu{
+	text-align: center;
+	width:80%;
+	margin: auto;
+	padding: 0;
+}
+nav #menu a,nav #menu a:link,nav #menu a:visited{
+	display: inline-block;
+	
+	padding: 10px 6%;
+	letter-spacing: 4px;
+	color: #8261C9;
+}
+nav #menu a:hover{
+    color:#9B99E3;
+}
+nav a.current{
+	text-decoration: line-through;
+	color: #9B99E3 !important;
+}
+nav #contact{
+	float: right;
+}
+#mail{
+	
+	
+	text-align: right;
+	margin-right: 0;
+}
