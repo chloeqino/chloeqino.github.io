@@ -3,6 +3,10 @@ nav{
 	background-color: #FCFAFF;
 	float: left;
 	padding: 0 10%;
+	z-index: 99;
+	display: block;
+	position: relative;
+
 }
 
 
@@ -21,7 +25,9 @@ nav div{
 nav:after{
 	display: table;
 	clear: both;
-	content:'';
+	content: '';
+	float: none;
+	
 }
 nav #menu{
 	text-align: center;
@@ -31,13 +37,16 @@ nav #menu{
 }
 nav #menu a,nav #menu a:link,nav #menu a:visited{
 	display: inline-block;
-	
+	z-index: 100;
 	padding: 10px 6%;
 	letter-spacing: 4px;
 	color: #8261C9;
+	
 }
 nav #menu a:hover{
+
     color:#9B99E3;
+    cursor: pointer;
 }
 nav a.current{
 	text-decoration: line-through;
