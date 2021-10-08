@@ -125,10 +125,19 @@ overflow: hidden;
 	background-color: #FCA243;
 	color: white;
 }
+.cover a.url:after{
+	font-family: 'Font Awesome\ 5 Free';
+	display: inline-table;
+	content: "\f35d";
+	color: white;
+	font-weight: 900;
+
+}
 .cover a.details{
 	background-color: #9E43FC;
 	color: white;
 }
+
 .cover a:hover{
 	border:2px solid ;
 	transition-duration: 0.2s;

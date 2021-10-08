@@ -54,4 +54,4 @@ Talking to classmates about class material, assignment requirements, etc. is a g
   none
 
 6. Is there anything special we need to know in order to run your code?
-
+ the about page is not done yet
