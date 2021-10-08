@@ -6,6 +6,7 @@ nav{
 	z-index: 99;
 	display: block;
 	position: relative;
+	
 
 }
 
@@ -61,3 +62,49 @@ nav #contact{
 	text-align: right;
 	margin-right: 0;
 }
+@media only screen and (max-width: 650px){
+
+	nav{
+	padding: 0 5%;
+}
+
+}
+@media only screen and (max-width: 500px)
+{
+	nav{
+	font-size: 12px;
+	}
+	nav #menu a,nav #menu a:link,nav #menu a:visited{
+	
+	padding: 10px 4%;
+	letter-spacing: 2px;
+	}
+	
+}
+@media only screen and (max-width: 300px){
+
+
+	nav{
+	font-size: 10px;
+	}
+	nav #menu a,nav #menu a:link,nav #menu a:visited{
+	
+	padding: 10px 2%;
+	letter-spacing: 0px;
+	}
+	nav#logo
+	{
+		width: 15%;
+	}
+
+	nav #menu{
+		width: 70%;
+	}
+
+
+
+}
+
+
+
+
