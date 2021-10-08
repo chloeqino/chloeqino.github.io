@@ -131,7 +131,7 @@ overflow: hidden;
 }
 .cover a:hover{
 	border:2px solid ;
-	transition-duration: 0.2px;
+	transition-duration: 0.2s;
 }
 
 .col h2{
