@@ -25,6 +25,7 @@ background-color: #BEB1DA;
 
 .container{
 	position: relative;
+	background-color: white;
 	background: url('purplehalo.png') no-repeat 105% 2px,url("yellowhalo.png") no-repeat 0 70%,linear-gradient(175.73deg, #F6F6FB 32.64%, #FDFEFF 43.47%, #F3EFFF 79.72%, #EEF3FF 90.97%);
 	background-size:auto,50%;
 	
