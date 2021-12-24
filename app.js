@@ -5,12 +5,22 @@ var sections;
 var sectionsid;
 var spots = [];
 var currentPosition;
+
+function getsectionsLocation(){
+
+    return Array.from(sections).map((e)=>{
+        let o = {};
+        o[e.offsetTop] = e.id;
+         //spots.push(e.offsetTop);
+        return e.offsetTop;
+    });
+}
 function reponsiveNav(){
   currentPosition = window.scrollY;
   let currentid =-1;
   navitems[0].classList.add("current");
   
- 
+  spots = getsectionsLocation();
       for(let i = spots.length-1;i>=0;i--){
           console.log(spots[i]);
          if(currentPosition>=spots[i]){
