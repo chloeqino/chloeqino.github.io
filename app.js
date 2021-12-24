@@ -5,7 +5,31 @@ var sections;
 var sectionsid;
 var spots = [];
 var currentPosition;
+var projects;
+var inview;
+var seem = false;
+function isElementXPercentInViewport(el, percentVisible) {
+    let
+      rect = el.getBoundingClientRect(),
+      windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+  
+    return !(
+      Math.floor(100 - (((rect.top >= 0 ? 0 : rect.top) / +-rect.height) * 100)) < percentVisible ||
+      Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < percentVisible
+    )
+  }
+function hideProjects(){
+    for(let i = 0; i<projects.length;i++){
+        projects[i].classList.add("hide");
+        }
+}
 
+function showProjects(){
+    for(let i = 0; i<projects.length;i++){
+        projects[i].classList.remove("hide");
+        
+        }
+}
 function getsectionsLocation(){
 
     return Array.from(sections).map((e)=>{
@@ -47,6 +71,9 @@ function reponsiveNav(){
 document.addEventListener("DOMContentLoaded", function(event) { 
     navitems = document.getElementsByClassName("nav-item");
     sections = document.getElementsByTagName("section");
+    projects = document.getElementsByClassName("project");
+    console.log(projects);
+    seem = false;
     targets = Array.from(navitems).map(function(e){
         let hrefvalue = String(e.getAttribute('href'));
         let o = {};
@@ -62,8 +89,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     console.log(targets);
     console.log(navitems);
     console.log(sectionsid,spots);
+    hideProjects();
     document.addEventListener('scroll', function(e) {
        reponsiveNav();
+    
+     
+    inview = isElementXPercentInViewport(projects[0],30);
+           if(inview && (!seem)){
+               showProjects();
+               seem = true;
+           }
+       
     });
     reponsiveNav();
 
