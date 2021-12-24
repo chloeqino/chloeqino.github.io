@@ -8,7 +8,7 @@ box-sizing: border-box;
 padding: 0;
 margin: 0;
 border: 0 solid transparent;
-
+-webkit-overflow-scrolling: touch;
 }
 html{
 	min-height: 100%;
