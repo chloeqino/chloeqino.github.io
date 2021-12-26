@@ -26,7 +26,7 @@ function hideProjects(){
 
 function showProjects(){
     for(let i = 0; i<projects.length;i++){
-        projects[i].classList.remove("hide");
+        setTimeout(function(){projects[i].classList.remove("hide");},i*400);
         
         }
 }
