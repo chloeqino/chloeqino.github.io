@@ -8,12 +8,20 @@
 
 @keyframes jumping{
 	0%{
-		top:0em;
+		top:0.1em;
 	}
-	70%{
+	20%{
+		top:0.2em;
+	}
+	40%{
 		top:0.3em;
 	}
-	100%{
+	60%{
 		top:0.2em;
+	}
+	80%{
+		top:0.1em;
+	}100%{
+		top:0em;
 	}
 }
