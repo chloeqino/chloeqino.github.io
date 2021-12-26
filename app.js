@@ -93,7 +93,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.addEventListener('scroll', function(e) {
        reponsiveNav();
     
-     
+    if(window.scrollY<=sections[1].offsetTop&&(!isElementXPercentInViewport(projects[0],1))){
+        seem = false;
+        hideProjects();
+    }
     inview = isElementXPercentInViewport(projects[0],30);
            if(inview && (!seem)){
                showProjects();
