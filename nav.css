@@ -4,9 +4,12 @@ nav{
 	float: left;
 	padding: 0 10%;
 	z-index: 99;
-	display: block;
+	display: flex;
 	position: fixed;
-
+ align-items: center;
+ align-content: center;
+ font-family: sans-serif;
+ transition-duration: 0.3s;
 
 }
 
@@ -30,20 +33,39 @@ nav:after{
 	float: none;
 	
 }
+
+
 nav #menu{
 	text-align: center;
 	width:80%;
 	margin: auto;
 	padding: 0;
+
 }
+
+
 nav #menu a,nav #menu a:link,nav #menu a:visited{
 	display: inline-block;
 	z-index: 100;
-	padding: 10px 6%;
-	letter-spacing: 4px;
-	color: #8261C9;
+	padding: 9px 6%;
+	letter-spacing: 0.1em;
+	color:rgb(84, 72, 85);
+	font-weight: lighter;
+
 	
 }
+nav.enlarged #menu a,nav.enlarged #menu a:link,nav.enlarged #menu a:visited{
+	padding: 18px 6%;
+	color: #8261C9;
+	font-weight: normal;
+	
+
+}
+nav.enlarged{
+	font-size: 1.1em;
+	
+}
+
 nav #menu a:hover{
 
     color:#9B99E3;

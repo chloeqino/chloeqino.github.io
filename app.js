@@ -44,6 +44,11 @@ function getsectionsLocation(){
 }
 function reponsiveNav(){
   currentPosition = window.scrollY;
+  if (currentPosition<(sections[1].offsetTop*0.7)){
+      navbar.classList.add("enlarged");
+  }else{
+      navbar.classList.remove("enlarged");
+  }
   let currentid =-1;
   navitems[0].classList.add("current");
   
@@ -73,6 +78,7 @@ function reponsiveNav(){
 }
 document.addEventListener("DOMContentLoaded", function(event) { 
     des = document.getElementById("des");
+    navbar = document.getElementById("main-nav");
     var typewriter = new Typewriter(des, {
         loop: true
     });
