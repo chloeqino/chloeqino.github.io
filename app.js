@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     typewriter.typeString("I have a passion for designing and building <strong><span class=\"yellow\">web experiences</span></strong>")
         .pauseFor(2500)
         .deleteAll()
-        .typeString("I am studying <strong class='yellow'>Informatics with a specialization in HCI</strong> at the University of California, Irvine")
+        .typeString("I am an <strong class='yellow'>Informatics</strong> major at the University of California, Irvine")
         .pauseFor(2500)
         .deleteAll()
         .typeString("Scroll down to learn about me <strong class='yellow'>:)</strong>")
