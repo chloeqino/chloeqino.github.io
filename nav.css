@@ -99,13 +99,14 @@ nav.mobile #nav-icon span{
 	  height: 100vh;
 	  background: rgba(103, 89, 146, 0.3);
 	  position: fixed;
-	  z-index: 99;
+	  z-index: -1;
 	  transition-duration: 0.4s;
 	  opacity: 0;
   }
   #overlay.show{
 	  display: block;
 	  opacity: 1;
+	  z-index: 99;
   }
   .submenu.hide{
      right:-100%;
