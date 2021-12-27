@@ -78,13 +78,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     
     typewriter.typeString("I have a passion for designing and building <strong><span class=\"yellow\">web experiences</span></strong>")
-        .pauseFor(2500)
+        .pauseFor(1500)
         .deleteAll()
         .typeString("I am an <strong class='yellow'>Informatics</strong> major at the University of California, Irvine")
-        .pauseFor(2500)
+        .pauseFor(1500)
         .deleteAll()
         .typeString("Scroll down to learn about me <strong class='yellow'>:)</strong>")
-        .pauseFor(2500)
+        .pauseFor(1500)
         .start();
     navitems = document.getElementsByClassName("nav-item");
     sections = document.getElementsByTagName("section");
