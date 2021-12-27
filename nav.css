@@ -198,7 +198,17 @@ nav #contact{
 @media only screen and (max-width: 650px){
 
 	nav{
-	padding: 0 5%;
+	padding: 0 0 0 5%;
+}
+#nav-icon{
+	right: 5vw;
+}
+
+nav.desktop{
+	display: none;
+}
+nav.mobile{
+	display: flex;
 }
 
 }
