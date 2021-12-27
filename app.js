@@ -2,6 +2,7 @@
 
 var navitems;
 var navbar;
+var navicon;
 var targets;
 var sections;
 var sectionsid;
@@ -76,9 +77,26 @@ function reponsiveNav(){
     }
 
 }
+function hideMobileMenu(){
+    navicon.classList.remove("open");
+    document.getElementById("mb-menu").classList.add("hide");
+    document.getElementById("overlay").classList.remove("show");
+}
+function toggleMobileMenu(){
+    navicon.classList.toggle("open");
+    if(navicon.classList.contains("open")){
+        document.getElementById("mb-menu").classList.remove("hide");
+        document.getElementById("overlay").classList.add("show");
+    }else{
+        document.getElementById("mb-menu").classList.add("hide");
+        document.getElementById("overlay").classList.remove("show");
+    }
+}
 document.addEventListener("DOMContentLoaded", function(event) { 
     des = document.getElementById("des");
     navbar = document.getElementById("main-nav");
+    navicon = document.getElementById("nav-icon");
+    navicon.addEventListener("click",toggleMobileMenu);
     var typewriter = new Typewriter(des, {
         loop: true
     });
@@ -115,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     hideProjects();
     document.addEventListener('scroll', function(e) {
        reponsiveNav();
-    
+     setTimeout(function(){hideMobileMenu()},200);
     if(window.scrollY<=sections[1].offsetTop&&(!isElementXPercentInViewport(projects[0],1))){
         seem = false;
         hideProjects();
