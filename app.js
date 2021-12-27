@@ -1,3 +1,5 @@
+
+
 var navitems;
 var navbar;
 var targets;
@@ -8,6 +10,7 @@ var currentPosition;
 var projects;
 var inview;
 var seem = false;
+var des;
 function isElementXPercentInViewport(el, percentVisible) {
     let
       rect = el.getBoundingClientRect(),
@@ -69,6 +72,20 @@ function reponsiveNav(){
 
 }
 document.addEventListener("DOMContentLoaded", function(event) { 
+    des = document.getElementById("des");
+    var typewriter = new Typewriter(des, {
+        loop: true
+    });
+    
+    typewriter.typeString("I have a passion for designing and building <strong><span class=\"yellow\">web experiences</span></strong>")
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString("I am studying <strong class='yellow'>Informatics with a specialization in HCI</strong> at the University of California, Irvine")
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString("Scroll down to learn about me <strong class='yellow'>:)</strong>")
+        .pauseFor(2500)
+        .start();
     navitems = document.getElementsByClassName("nav-item");
     sections = document.getElementsByTagName("section");
     projects = document.getElementsByClassName("project");
