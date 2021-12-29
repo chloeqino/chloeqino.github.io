@@ -115,6 +115,11 @@ a{
 	top: -2vh;
 	font-size: 3vw;
 	font-family: "Roboto Mono",monospace;
+	
+	min-height:10vw;
+	text-align: center;
+	
+	
 }
 
 p.hello{
@@ -142,9 +147,22 @@ span.name{
 }
 
 #hero .vcenter{
-	top: 60%;
+	/*
+	top: 73%;
+	height: 92vh;
 	-ms-transform: translate(-50%, -57%);
   transform: translate(-50%, -57%);
+  */
+  display: flex;
+  align-items: center;
+  position: relative;
+  top:auto;
+  left: auto;
+  height: 92%;
+  -ms-transform: none;
+  transform: none;
+  top: 4vh;
+  
 }
 #content{
 	display: block;
@@ -184,9 +202,16 @@ span.blue{
 	border-top:1px solid #EEF3FF;
 }
 
-
+#viewworks{
+	position: absolute;
+	bottom: 8vh;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
 a#mouse{
-	margin-top: 10vh;
+	
 	display: block;
 	color:#B796FB;
 	position: relative;
@@ -441,14 +466,18 @@ img.mockup{
 	p.hello{
 		letter-spacing: 5px;
 		font-size: 20px;
+		line-height: 2em;
+		margin-bottom: 10px;
+		display: table;
 	}
 	span.name{
-		letter-spacing: 10px;
-		font-size: 35px;
+		letter-spacing: 0.2em;
+		font-size: 10vw;
 	}
 	
 	#intro p#des{
 		font-size: 15px;
+		top:0;
 	}
 	#content a#works{
 		font-size: 20px;
