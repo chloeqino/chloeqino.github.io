@@ -14,11 +14,12 @@ nav{
  
 }
 nav.mobile{
-	display: none;;
+	display: none;
 }
 nav.mobile #nav-icon{
-	width: 20px;
-  height: 20px;
+	
+	width: 30px;
+  height: 30px;
   position: relative;
   margin: 0px auto;
   -webkit-transform: rotate(0deg);
@@ -35,7 +36,7 @@ nav.mobile #nav-icon{
 nav.mobile #nav-icon span{
 	display: block;
 	position: absolute;
-	height: 3px;
+	height: 4px;
 	width: 100%;
 	background: #8261C9;
 	border-radius: 9px;
@@ -209,13 +210,18 @@ nav.desktop{
 }
 nav.mobile{
 	display: flex;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+nav.mobile #logo{
+	font-size:20px;
 }
 
 }
 @media only screen and (max-width: 500px)
 {
 	nav{
-	font-size: 12px;
+	font-size: 25px;
 	padding: 0 0 0 5%;
 	}
 	#nav-icon{
