@@ -101,10 +101,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         loop: true
     });
     
-    typewriter.typeString("I have a passion for designing and building <strong><span class=\"yellow\">web experiences</span></strong>")
+    typewriter.pauseFor(1500).typeString("I have a passion for designing and building <strong><span class=\"highlight\">web experiences</span></strong>")
         .pauseFor(1500)
         .deleteAll()
-        .typeString("I am an <strong class='yellow'>Informatics</strong> major at the University of California, Irvine")
+        .typeString("I am an <strong class='highlight'>Informatics</strong> major at the University of California, Irvine")
         .pauseFor(1500)
         .deleteAll()
         .typeString("Scroll down to learn more about me <strong class='yellow'>:)</strong>")
