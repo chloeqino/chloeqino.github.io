@@ -92,21 +92,24 @@ function toggleMobileMenu(){
         document.getElementById("overlay").classList.remove("show");
     }
 }
+var lines = [];
 document.addEventListener("DOMContentLoaded", function(event) { 
     des = document.getElementById("des");
     navbar = document.getElementById("main-nav");
     navicon = document.getElementById("nav-icon");
+  
     navicon.addEventListener("click",toggleMobileMenu);
     var typewriter = new Typewriter(des, {
         loop: true
     });
-    
+    lines[0] = 'I have a passion for designing and building web experiences |';
+    let n = lines[0].length-3;
     typewriter.pauseFor(1500).typeString("I have a passion for designing and building <strong><span class=\"highlight\">web experiences</span></strong>")
         .pauseFor(1500)
-        .deleteAll()
-        .typeString("I am an <strong class='highlight'>Informatics</strong> major at the University of California, Irvine")
+        .deleteChars(n).pauseFor(1000)
+        .typeString("am an <strong class='highlight'>Informatics</strong> major at the University of California, Irvine")
         .pauseFor(1500)
-        .deleteAll()
+        .deleteAll().pauseFor(1000)
         .typeString("Scroll down to learn more about me <strong class='yellow'>:)</strong>")
         .pauseFor(1500)
         .start();
