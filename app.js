@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .typeString("am an <strong class='highlight'>Informatics</strong> major at the University of California, Irvine")
         .pauseFor(1500)
         .deleteAll().pauseFor(1000)
-        .typeString("Scroll down to learn more about me <strong class='yellow'>:)</strong>")
+        .typeString("Scroll down to learn more about me <strong class='highlight'>:)</strong>")
         .pauseFor(1500)
         .start();
     navitems = document.getElementsByClassName("nav-item");

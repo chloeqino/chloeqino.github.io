@@ -12,9 +12,9 @@ EMAIL: Your email here
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description" content="description of your page">
-  <link rel="stylesheet" type="text/css" href="nav3.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
   <link rel="stylesheet" type="text/css" href="footer.css">
-   <link rel="stylesheet" type="text/css" href="style3.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
    
    
 
@@ -36,22 +36,24 @@ EMAIL: Your email here
   <div id="overlay"></div>
   <nav class="desktop" id="main-nav">
       
-    <a href="#" title="home page"><div id = 'logo'>Q<span class="yellow">/</span>C</div></a>
+    <a href="index.html" title="home page"><div id = 'logo'>Q<span class="yellow">/</span>C</div></a>
    <div id='menu'>
      <a href="#hero" class="nav-item" title="home">Home</a>
      <a href="#" title="about" class="nav-item">About</a>
      <a href="#work" title="projects" class="nav-item">Projects</a>
    </div>
-   
+   <div id='contact'>
+   <a href="mailto:qinyuc4@uci.edu"><span class="material-icons-outlined yellow" aria-label="email me" id='mail'>mail</span></a>
+ </div>
  </nav>
  <nav class="mobile" id="main-nav">
       
-  <a href="#" title="home page"><div id = 'logo'>Q<span class="yellow">/</span>C</div></a>
+  <a href="index.html" title="home page"><div id = 'logo'>Q<span class="yellow">/</span>C</div></a>
  <div id='menu'>
   <div id="nav-icon">
     <span></span>
     <span></span>
-    
+    <span></span>
   </div>
   <div class="submenu hide" id="mb-menu">
    <a href="#hero" class="nav-item" title="home">Home</a>
@@ -71,9 +73,9 @@ EMAIL: Your email here
       <div class="vcenter" id = "content">
     <div id = 'intro'>
     <p class='hello'>
-      
+      Hello, I am <br>
       <span class="blue name">
-      <span class='purple'>Q</span>i<span class='purple'>n</span>y<span class='purple'>u</span> C<span class='purple'>h</span>e<span class='purple'>n</span>
+      <span class='purple'>Q</span>i<span class='purple'>n</span>y<span class='purple'>u</span> C<span class='purple'>h</span>e<span class='purple'>n</span>.
       </span>
     </p>
      <p id='des' class='typing'>I have a passion for designing and building <strong><span class="yellow">web experiences</span></strong></p>
@@ -86,14 +88,21 @@ EMAIL: Your email here
   <a href="#work" id='works' aria-label='view my work'>View My Work</a>
   -->
   <a href="#work" id="mouse">
-    <span class="fa fa-chevron-down"></span>
-   
-    
+  <span class="material-icons-outlined">
+    mouse
+    </span>
     </a>
 </div>
 </section>
 <section class="container" id="work">
- 
+  <div id="wavy">
+  <svg viewBox="0 0 400 400" preserveAspectRatio="xMinYMin meet">
+    <!--
+    <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:#EEF3FF;"></path>
+    -->
+    <path d="M0,40 C100,150 250,0 400,40 L400,00 L0,0 Z" style="stroke: none; fill:#EEF3FF;"></path>
+  </svg>
+  </div>
   
   <div class="wrapper">
     <h2 class="purple">My Work</h2>
