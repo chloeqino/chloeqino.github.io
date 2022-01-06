@@ -155,6 +155,8 @@ a{
 	}
 	to{
 		transform: translateY(3em);
+		-webkit-transform: translateY(3em);
+	
 		
 	}
 }
