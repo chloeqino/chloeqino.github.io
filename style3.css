@@ -754,6 +754,7 @@ p.hello{
 	#hero{
 	
 background-attachment: scroll;
+background-image:url("bgsmall.png");
 	}
 .cover a{
 	
