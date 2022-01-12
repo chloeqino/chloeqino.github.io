@@ -198,6 +198,7 @@ nav #menu a:hover{
 }
 
 nav.enlarged a.nav-item.current{
+	font-weight: 800;
 	color: var(--lightpink) !important;
 }
 nav a.nav-item.current{

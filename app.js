@@ -1,6 +1,7 @@
 
 
 var navitems;
+var desktop_navitems;
 var navbar;
 var navicon;
 var targets;
@@ -45,8 +46,30 @@ function getsectionsLocation(){
 }
 function reponsiveNav(){
   currentPosition = window.scrollY;
-  if (currentPosition<(sections[1].offsetTop*0.7)){
+  if (currentPosition<(sections[1].offsetTop)){
       navbar.classList.add("enlarged");
+     let progress = Math.ceil(currentPosition/sections[1].offsetTop*10)/10
+      let opacity =Math.floor(currentPosition/sections[1].offsetTop*10)/10;
+      let rbg = [84, 72, 85,1];
+      let lightpink = [251, 250, 255,0.7];
+      let new_rgba = rbg.map((e,i)=>{
+          return lightpink[i]+((e-lightpink[i])*progress);
+      });
+      new_rgba = "rgba("+new_rgba[0]+","+new_rgba[1]+","+new_rgba[2]+","+new_rgba[3]+")";
+      console.log(new_rgba);
+
+Array.prototype.forEach.call(desktop_navitems, function(el,i) {
+    // Do stuff hre
+    console.log(i+el);
+    if(i==0){
+    el.setAttribute('style',"color:"+new_rgba+" !important");
+    }else{
+        el.style.color = new_rgba;
+    }
+});
+      if(opacity<0.2){opacity=0};
+      console.log("opacity"+opacity);
+      navbar.style.backgroundColor="rgba(255,255,255,"+opacity+")";
   }else{
       navbar.classList.remove("enlarged");
   }
@@ -55,20 +78,20 @@ function reponsiveNav(){
   
   spots = getsectionsLocation();
       for(let i = spots.length-1;i>=0;i--){
-          console.log(spots[i]);
+          //console.log(spots[i]);
          if(currentPosition>=spots[i]){
-             console.log(spots[i]);
-             console.log(typeof(spots[i]));
-             console.log(sectionsid[i]);
-             console.log(targets);
+             //console.log(spots[i]);
+             //console.log(typeof(spots[i]));
+             //console.log(sectionsid[i]);
+             //console.log(targets);
              currentid = sectionsid[i];
              break;
          }
       }
-      console.log(currentid);
+      //console.log(currentid);
     if(currentid!=-1){
       for(let j=0;j<navitems.length;j++){
-          console.log(navitems[j].getAttribute("href"));
+          //console.log(navitems[j].getAttribute("href"));
           navitems[j].classList.remove("current");
           if(navitems[j].getAttribute('href')==currentid){
            navitems[j].classList.add("current");
@@ -114,6 +137,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .pauseFor(1500)
         .start();
     navitems = document.getElementsByClassName("nav-item");
+    desktop_navitems =document.getElementsByClassName("desktop-nav-item");
     sections = document.getElementsByTagName("section");
     projects = document.getElementsByClassName("project");
     console.log(projects);
