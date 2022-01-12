@@ -68,6 +68,7 @@ section{
 	/*background: url('purplehalo.png') no-repeat 105% 2px,url("bluehalo.png") no-repeat 0 70%,url(planet.png) no-repeat 96% 60%,linear-gradient(175.73deg, #F6F6FB 32.64%, #FDFEFF 43.47%, #F3EFFF 79.72%, #EEF3FF 90.97%);
 	background-size:auto,35%,40%;
 	*/
+	background-color: rgba(104, 67, 184,0.8) !important;
 	background: url('gradientbg.png');
 	min-height: 100%;
 	height: 100%;
