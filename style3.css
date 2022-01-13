@@ -284,6 +284,7 @@ span.blue{
 	text-align: center;
 	width: 100%;
 	animation: fadein 0.7s ease-in 1 1.8s backwards;
+	-webkit-animation: fadein 0.7s ease-in 1 1.8s backwards;
 
 }
 a#mouse{
