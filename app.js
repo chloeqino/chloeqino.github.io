@@ -72,6 +72,15 @@ Array.prototype.forEach.call(desktop_navitems, function(el,i) {
       navbar.style.backgroundColor="rgba(255,255,255,"+opacity+")";
   }else{
       navbar.classList.remove("enlarged");
+      Array.prototype.forEach.call(desktop_navitems, function(el,i) {
+        // Do stuff hre
+        console.log(i+el);
+        if(i==0){
+        el.setAttribute('style',"rgba(84, 72, 85,1) !important");
+        }else{
+            el.style.color = 'rgba(84, 72, 85,1)';
+        }
+    });
   }
   let currentid =-1;
   navitems[0].classList.add("current");
