@@ -402,6 +402,9 @@ cursor: pointer;
 	border:none;
 	
 }
+.project:nth-child(odd){
+	flex-direction: row-reverse;
+}
 .project h3{
 	margin-bottom: 1.5em;
 	color:var(--themepurple);
