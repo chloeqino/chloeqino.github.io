@@ -736,6 +736,10 @@ p.hello{
 .project{
 	flex-direction: column;
 	height: auto;
+
+}
+.project:nth-child(odd){
+	flex-direction: column;
 }
 .project h3{
 	margin-bottom: auto;
@@ -784,6 +788,7 @@ background-image:url("bgsmall.png");
 	margin: auto;
 	letter-spacing: 1px;
 }
+
 .project{
 	padding: 0 1px 0 0;
 }
