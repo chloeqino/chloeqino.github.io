@@ -126,6 +126,8 @@ function toggleMobileMenu(){
 }
 var lines = [];
 document.addEventListener("DOMContentLoaded", function(event) { 
+    document.getElementById("demovideo").playbackRate = 1.75;
+
     des = document.getElementById("des");
     navbar = document.getElementById("main-nav");
     navicon = document.getElementById("nav-icon");
