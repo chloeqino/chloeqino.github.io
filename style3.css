@@ -105,7 +105,13 @@ section{
 	z-index: 0;
 	
 }
-
+.unfinished{
+	color: gray;
+	text-decoration: underline;
+	display: table;
+	margin-top: 5px;
+	font-style: italic;
+}
 section h2{
 	text-align: center;
 	position: relative;
@@ -725,6 +731,10 @@ p.hello{
 }
 .description p{
 	font-size: 12px;
+}
+.unfinished{
+	margin-left: auto;
+	margin-right: auto;
 }
 .project .col
 {
