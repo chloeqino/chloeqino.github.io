@@ -280,6 +280,7 @@ span.blue{
 #work{
 	margin-top: 0!important;
 	border-top:1px solid #EEF3FF;
+	padding-bottom: 90px;
 }
 
 #viewworks{
@@ -379,7 +380,7 @@ cursor: pointer;
 
 
 .project{
-	margin-bottom: 0px;
+	margin-bottom: 2em;
 	/*
 	box-shadow: 2px 4px 14px 3px #E6E9F5;
 	*/
@@ -419,7 +420,7 @@ cursor: pointer;
 .row .col{
 	display: inline-block;
 	float: left;
-	width: 50%;
+	
 	
 }
 .project .left{
@@ -513,6 +514,7 @@ img.mockup{
 
 	color: #9E43FC;
 	padding: 5px;
+	padding-left: 0;
 	display: table;
 	margin-top: 4px;
 	text-decoration: underline;
@@ -529,7 +531,11 @@ img.mockup{
   transition-duration: 0.3s;
 }
 .project .description a.details:after{
-	content: "-->";
+	font-family: 'Font Awesome\ 5 Free';
+	display: inline-table;
+	content: '\f35d';
+	font-weight: 900;
+	padding-left: 3px;
 }
 
 .project .left:hover .cover{
@@ -563,6 +569,9 @@ img.mockup{
 	padding: 25px 5%;
 
 
+}
+.project .description p{
+	line-height: 1.4;
 }
 @media only screen and (max-width: 970px){
 	/*

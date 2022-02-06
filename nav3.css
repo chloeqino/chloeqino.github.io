@@ -178,6 +178,9 @@ nav #menu a,nav #menu a:link,nav #menu a:visited{
 
 	
 }
+nav #menu a:last-of-type{
+	padding-right: 0 !important;
+}
 nav.enlarged #menu a,nav.enlarged #menu a:link,nav.enlarged #menu a:visited{
 	padding: 18px 6%;
 	color: var(--lightpink);
