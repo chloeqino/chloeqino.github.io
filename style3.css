@@ -573,6 +573,8 @@ img.mockup{
 }
 .project .description p{
 	line-height: 1.4;
+	letter-spacing: 0.03em;
+	color:#393742;
 }
 @media only screen and (max-width: 970px){
 	/*
