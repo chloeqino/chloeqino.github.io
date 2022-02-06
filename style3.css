@@ -427,7 +427,7 @@ cursor: pointer;
 .project .left{
 
 position: relative;
-
+width:70%;
 display: flex;
 overflow: hidden;
 
