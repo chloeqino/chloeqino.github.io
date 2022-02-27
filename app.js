@@ -1,5 +1,6 @@
 
 
+
 var navitems;
 var desktop_navitems;
 var navbar;
@@ -12,7 +13,10 @@ var currentPosition;
 var projects;
 var inview;
 var seem = false;
+var aboutmeseem = false;
 var des;
+var aboutme;
+//var cubeContainer;
 function isElementXPercentInViewport(el, percentVisible) {
     let
       rect = el.getBoundingClientRect(),
@@ -59,8 +63,7 @@ function reponsiveNav(){
       console.log(new_rgba);
 
 Array.prototype.forEach.call(desktop_navitems, function(el,i) {
-    // Do stuff hre
-    console.log(i+el);
+   
     if(i==0){
     el.setAttribute('style',"color:"+new_rgba+" !important");
     }else{
@@ -74,7 +77,7 @@ Array.prototype.forEach.call(desktop_navitems, function(el,i) {
       navbar.classList.remove("enlarged");
       Array.prototype.forEach.call(desktop_navitems, function(el,i) {
         // Do stuff hre
-        console.log(i+el);
+        //console.log(i+el);
         if(i==0){
         el.setAttribute('style',"rgba(84, 72, 85,1) !important");
         }else{
@@ -127,11 +130,12 @@ function toggleMobileMenu(){
 var lines = [];
 document.addEventListener("DOMContentLoaded", function(event) { 
     document.getElementById("demovideo").playbackRate = 1.75;
-
-    des = document.getElementById("des");
+    //cubeContainer = document.getElementById("cube");
+   
+    des = document.getElementById("des2");
     navbar = document.getElementById("main-nav");
     navicon = document.getElementById("nav-icon");
-  
+  aboutme = document.getElementById("aboutme");
     navicon.addEventListener("click",toggleMobileMenu);
     var typewriter = new Typewriter(des, {
         loop: true
@@ -151,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     desktop_navitems =document.getElementsByClassName("desktop-nav-item");
     sections = document.getElementsByTagName("section");
     projects = document.getElementsByClassName("project");
-    console.log(projects);
+    aboutme.classList.add("hide");
     seem = false;
     targets = Array.from(navitems).map(function(e){
         let hrefvalue = String(e.getAttribute('href'));
@@ -175,6 +179,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if(window.scrollY<=sections[1].offsetTop&&(!isElementXPercentInViewport(projects[0],1))){
         seem = false;
         hideProjects();
+    }
+    if(isElementXPercentInViewport(aboutme,60)&&!aboutmeseem){
+        aboutme.classList.remove("hide");
+        aboutme.classList.add("fadein");
+        aboutmeseem = true;
     }
     inview = isElementXPercentInViewport(projects[0],30);
            if(inview && (!seem)){

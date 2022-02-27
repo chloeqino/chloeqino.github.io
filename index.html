@@ -49,7 +49,7 @@ EMAIL: Your email here
     <a href="#" title="home page"><div id = 'logo'>Q<span class="yellow">/</span>C</div></a>
    <div id='menu'>
      <a href="#hero" class="nav-item desktop-nav-item" title="home">Home</a>
-     <a href="#" title="about" class="nav-item desktop-nav-item">About</a>
+     <a href="#about" title="about" class="nav-item desktop-nav-item">About</a>
      <a href="#work" title="projects" class="nav-item desktop-nav-item">Projects</a>
    </div>
    
@@ -65,7 +65,7 @@ EMAIL: Your email here
   </div>
   <div class="submenu hide" id="mb-menu">
    <a href="#hero" class="nav-item" title="home">Home</a>
-   <a href="#" title="about" class="nav-item">About</a>
+   <a href="#about" title="about" class="nav-item">About</a>
    <a href="#work" title="projects" class="nav-item">Projects</a>
  <a href="mailto:qinyuc4@uci.edu"><span class="material-icons-outlined yellow" aria-label="email me" id='mail'>mail</span></a>
 </div>
@@ -86,7 +86,7 @@ EMAIL: Your email here
       <span class='purple'>Q</span>i<span class='purple'>n</span>y<span class='purple'>u</span> C<span class='purple'>h</span>e<span class='purple'>n</span>
       </span>
     </p>
-     <p id='des' class='typing'>I have a passion for designing and building <strong><span class="yellow">web experiences</span></strong></p>
+     <p id='des' class="typing">I have a passion for designing and building <strong><span class="highlight">web experiences</span></strong></p>
   </div>
  
 </div>
@@ -95,18 +95,42 @@ EMAIL: Your email here
   <!--
   <a href="#work" id='works' aria-label='view my work'>View My Work</a>
   -->
-  <a href="#work" id="mouse">
+  <a href="#about" id="mouse">
     <span class="fa fa-chevron-down"></span>
    
     
     </a>
 </div>
 </section>
+<section class="container" id="about">
+  <h2>About Me</h2>
+  <div>
+    <div class="wrapper" id="aboutme">
+    
+    <div id="text_intro">
+      <p>Hello, I am Qinyu Chen and  I am studying Informatics at the University of California, Irvine. I am an aspiring Front-end developer who likes to make web applications that are functional and beautiful. </p>
+      <p>I find it fascinating to experiment with the magic of web technologies and explore the seemingly infinite of possibilities what the web has to offer.
+      </p>
+      <a href="#work" class="next">View my Work</a>
+    </div>
+    <div id="cube">
+      <div class="cube_side">
+      <img  src="bimoji.png" alt="my bitmoji" class="me">
+      </div>
+      <div class="cube_side back">
+        <img  src="bimoji2.png" alt="my bitmoji" class="me">
+        </div>
+        
+    </div>
+    </div>
+
+  </div>
+</section>
 <section class="container" id="work">
  
   
   <div class="wrapper">
-    <h2 class="purple">My Work</h2>
+    <h2 class="purple"><img src="cat.png">My Work</h2>
     <div class="row  project">
         
       <div class="col left">
@@ -197,7 +221,44 @@ EMAIL: Your email here
   </div>
   <div class="col" id="copyright">designed and coded with <span class="fa fa-heart" id="heart"></span> by Qinyu Chen</div>
 </footer>
+<!---
+<script type="module">
+  import * as THREE from 'https://cdn.skypack.dev/three@0.138.0';
+    const scene = new THREE.Scene();
+    const cubeContainer = document.getElementById("cube");
+const camera = new THREE.PerspectiveCamera( 30, cubeContainer.clientWidth / cubeContainer.clientWidth, 0.1, 1000 );
+const renderer = new THREE.WebGLRenderer({alpha:true});
+renderer.setSize( cubeContainer.clientWidth, cubeContainer.clientWidth);
+
+cubeContainer.appendChild( renderer.domElement );
+const geometry = new THREE.BoxGeometry( 1, 1, 1 );;
+const loader = new THREE.CubeTextureLoader();
+loader.setPath( './' );
 
 
+
+const textureCube = loader.load( [
+	'bimoji2.png', 'bimoji.png',
+	'bimoji2.png', 'bimoji.png',
+	'bimoji.png', 'bimoji2.png'
+] );
+textureCube.generateMipmaps = false;
+const material = new THREE.MeshBasicMaterial( { color:0xffffff,envMap:textureCube } );
+const cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+camera.position.z = 3;
+
+			function animate() {
+				requestAnimationFrame( animate );
+
+				cube.rotation.x += 0.001;
+				cube.rotation.y += 0.001;
+
+				renderer.render( scene, camera );
+			};
+
+			animate();
+</script>
+-->
 </body>
 </html>
