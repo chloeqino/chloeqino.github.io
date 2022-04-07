@@ -1,80 +1,66 @@
-footer{
-	width: 100%;
-	position: relative;
-	bottom: 0;
-	padding: 20px 10%;
-	display: block;
-	font-family: sans-serif;
-	
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  padding: 20px 10%;
+  display: block;
+  font-family: sans-serif;
 }
-body > footer{
-	background-color: rgb(248, 247, 255);
+body > footer {
+  background-color: rgb(248, 247, 255);
 }
-footer #socials a{
- margin-right: 10%;
- padding: 5px 0;
- color: #BEB1DA;
- font-size: 30px;
- font-weight: 900;
- font-family: "Font Awesome 5 Free";
- transition-duration: 0.1s;
-
+footer #socials a {
+  margin-right: 10%;
+  padding: 5px 0;
+  color: #beb1da;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  transition-duration: 0.1s;
 }
-footer #socials a:hover{
-	color: #8773b4;
-   
- 
-
+footer #socials a:hover {
+  color: #8773b4;
 }
-footer .col{
-  
-  
+footer .col {
   width: 50%;
 }
-footer #heart{
-	color: #BEB1DA;
-
-	
+footer #heart {
+  color: #beb1da;
 }
-footer #copyright{
-	padding: 7px;
-	text-align: right;
-	color: #BEB1DA;
+footer #copyright {
+  padding: 7px;
+  text-align: right;
+  color: #beb1da;
 }
-.fa-linkedin-in{
-	font-family:"Arial";
+.fa-linkedin-in {
+  font-family: "Arial";
 }
 
-@media only screen and (max-width: 650px){
-
-	footer{
-	padding: 15px 5%;
-	padding-bottom: 5px;;
-	margin-top: 10px;
+@media only screen and (max-width: 650px) {
+  footer {
+    padding: 15px 5%;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+  footer #socials a {
+    font-size: 25px;
+  }
 }
-footer #socials a{
-	font-size: 25px;
-}
-}
-@media only screen and (max-width: 600px){
-	footer .col{
-		width: 100% !important;
-		float: none !important;
-		display: block !important;
-		
-
-	}
-	footer #socials{
-		
-		display: table;
-		text-align: center;
-	}
-	footer #socials a{
-		margin: 0 10% 0 10%;
-		font-size: 30px;
-	}
-	footer #copyright{
-		text-align: center;
-	}
-
+@media only screen and (max-width: 600px) {
+  footer .col {
+    width: 100% !important;
+    float: none !important;
+    display: block !important;
+  }
+  footer #socials {
+    display: table;
+    text-align: center;
+  }
+  footer #socials a {
+    margin: 0 10% 0 10%;
+    font-size: 30px;
+  }
+  footer #copyright {
+    text-align: center;
+  }
 }
