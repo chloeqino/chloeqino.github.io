@@ -1,223 +1,370 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8"/>
-<script src="cheatsheet.js"></script>
-	<title>Web Development Cheatsheet</title>
-	<meta name="keywords" content="HTML,CSS,JavaScript,Frontend,Cheatsheet,color picker">
- <meta name="description" content="cheatsheet for frontend development">
- 
-<link rel="shortcut icon" href="favicon_package/favicon.ico">
-<link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#6184c9">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="cheatsheet2.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway:200,300i,400,500" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:200,300i,400,500" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-	<div class="container">
-	<!--Nav Bar-->
-	<div class="header"><nav>
-	<a href="cheatsheet_2.html" onclick="hide()"><h2 title="go to the top" onclick="hide()"><!--<i class="fa fa-file-text" aria-hidden="true"></i>-->&nbsp;<span id="titletext">Web Development CheatSheet</span><span id="title2">Cheatsheet</span></h2></a>
-	<i class="fa fa-bars" id="bar"></i>
-	<ul id="menu-list">
-		<li><a href="cheatsheet_2.html">Home</a></li>
-<li class="code"><a id="codefont" href="#">Code &lt; &gt;</a>
-        <span id="index">
-		  	<a href="#anchor-code2">Deflaut Values</a>
-		  	<a href="#anchor-right1">Embeding Files</a>
-        	<a href="#anchor-center">Responsive Design</a>
-        	<a href="#anchor-icon">Adding Icons</a>
-        </span>
-		</li>
-		<li><a href="#anchor-link" onclick="hide()" id="li">Link</a></li>
-		<span class="dropdown">
-		<li><a onclick="dropDown()"><span id="v">Version&nbsp;<i id="downarrow">&#9660;</i></span></a></li>
-         <div id="version">
-		<a href="cheatsheet.html">Verison 1</a>
-		<a href="cheatsheet_2.html">Version 2</a></div>
-		</span>	</ul></nav>
-     </div><br>
-     <!--Commonly used code-->
-	
-	
-		<div id="code" onclick="hide()">
-            <span id="anchor-code2"></span>
-			<h3>Change the Default Value</h3>
-        <p><br><code>
-        	* {<br>
-             box-sizing: border-box;<br>
-             padding: 0;<br>
-             }<br>
-           body{<br>
-	        padding: 0;<br>
-	        margin: 0;<br>
-	         }</code>
-        </p>
-         
-		</div><br>
-		<div id="right1" onclick="hide()">
-			<span id="anchor-right1"></span>
-			<h3>Embeding Files</h3>
-			<p><br>
-			&nbsp;<i>css file:</i>&nbsp;
-			(inside the head tag)
-			<br><br>
-			<code>
-				
-				&lt;link rel="stylesheet" type="text/css" href="name.css"><br>
-			</code> <br></p>
-			<p>
-			<i>javascipt file: </i>&nbsp;(inside the &lt;body> or &lt;head>)<br><br><code>
-             
-             &lt;script src="file_name.js">&lt;/script><br>
-            
-         </code></p>
-          
-             
+  <head>
+    <meta charset="utf-8" />
+    <script src="cheatsheet.js"></script>
+    <title>Web Development Cheatsheet</title>
+    <meta
+      name="keywords"
+      content="HTML,CSS,JavaScript,Frontend,Cheatsheet,color picker"
+    />
+    <meta name="description" content="cheatsheet for frontend development" />
 
-			
-		</div><br><br>
-		<div id="center" onclick="hide()">
-			<span id="anchor-center"></span>
-			<a href="#anchor-center"><h3>Responsive Design</h3></a>
-			<br>
-			<p>To create a responsive page, add the line of code inside the head tag: <br><br><code>
-         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"></code><br>
-         <br>when the view point is #px or smaller:<br><br>
-            <code>
-            	@media only screen and (max-width: #px) <br>{<br>
-            	<span class="comment">/* your code here*/</span><br>
-            }
-            </code>
-           <br><br>When width < height:<br><br>
-           <code>@media only screen and (orientation: portrait)
-           <br>{<br>
-            	<span class="comment">/* your code here*/</span><br>}</code>
+    <link rel="shortcut icon" href="favicon_package/favicon.ico" />
+    <link
+      rel="mask-icon"
+      href="favicon_package/safari-pinned-tab.svg"
+      color="#6184c9"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_package/apple-touch-icon.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="cheatsheet2.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,300i,400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Handlee"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:200,300i,400,500"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+      <!--Nav Bar-->
+      <div class="header">
+        <nav>
+          <a href="cheatsheet_2.html" onclick="hide()"
+            ><h2 title="go to the top" onclick="hide()">
+              <!--<i class="fa fa-file-text" aria-hidden="true"></i>-->&nbsp;<span
+                id="titletext"
+                >Web Development CheatSheet</span
+              ><span id="title2">Cheatsheet</span>
+            </h2></a
+          >
+          <i class="fa fa-bars" id="bar"></i>
+          <ul id="menu-list">
+            <li><a href="cheatsheet_2.html">Home</a></li>
+            <li class="code">
+              <a id="codefont" href="#">Code &lt; &gt;</a>
+              <span id="index">
+                <a href="#anchor-code2">Deflaut Values</a>
+                <a href="#anchor-right1">Embeding Files</a>
+                <a href="#anchor-center">Responsive Design</a>
+                <a href="#anchor-icon">Adding Icons</a>
+              </span>
+            </li>
+            <li><a href="#anchor-link" onclick="hide()" id="li">Link</a></li>
+            <span class="dropdown">
+              <li>
+                <a onclick="dropDown()"
+                  ><span id="v"
+                    >Version&nbsp;<i id="downarrow">&#9660;</i></span
+                  ></a
+                >
+              </li>
+              <div id="version">
+                <a href="cheatsheet.html">Verison 1</a>
+                <a href="cheatsheet_2.html">Version 2</a>
+              </div>
+            </span>
+          </ul>
+        </nav>
+      </div>
+      <br />
+      <!--Commonly used code-->
 
-			<br><br>
-			Go to <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/" target="_blank" id="fa">this link</a> to check out Media Queries for Standard Devices</p>
-		</div><br>
-<div id="icon" onclick="hide()">
-	<span id="anchor-icon"></span>
-	<a href="#anchor-icon"><h3>Add Icons To Webpage</h3></a>
-	<br>
-	<p> To use the <a href="http://fontawesome.io/icons/" target="_blank" id="fa">Font Awesome Icons</a>, add this line of code inside the head tag: <br><br>
-           <code>
-           	
-           	&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><br>
-           	<br>
-           </code>
-
-           <br>To use the <a href="https://material.io/icons/" target="_blank" id="fa">Google Icons</a>, add this line of code inside the head tag:<br><br>
-           <code>&lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"></code>
-           </p>
-</div>
-	<br>
-	<!--link shortcut-->
-	
-	<section id="link" onclick="hide()">
-		<span id="anchor-link"></span>
-<center>
-<ul id="linkList">
-	<li id="google"><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
-	<li id="pink"><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
-	<li id="blue1"><a href="https://www.w3schools.com/bootstrap/default.asp" target="_blank">Learning Bootstrap</a></li>
-	<li id="green1"><a href="https://websitesetup.org/web-safe-fonts-html-css/" target="_blank">Safe Fonts</a></li>
-	<li id="doc"><a href="http://htmlcolorcodes.com/color-picker/" target="_blank">Color Picker</a></li>
-	<li id="pink1"><a href="http://fontawesome.io/icons/" target="_blank">Font Awesome Icons</a></li>
-	
-	<li id="green2"><a href="https://www.codecademy.com/learn" target="_blank">CodeAcedemy</a></li>
-	
-	<li id="pink1"><a href="https://stackoverflow.com/" target="_blank">Stackoverflow</a></li>
-	<li id="purple1"><a href="https://github.com/logeshpaul/CSS-Hacks#css-browser-selector" target="_blank">CSS hacks</a></li>
-	<li id="blue1"><a href="https://github.com/explore" target="_blank">GitHub</a></li>
-	<li id="pink"><a href="https://www.webdesignerexpress.com/blog/css-glyphs-and-html-special-characters.html" target="_blank">Special Characters</a></li>
-	<li id="blue1"><a href="https://css-tricks.com/" target="_blank">CSS-TRICKS</a></li>
-	<li id="green"><a href="https://brajeshwar.github.io/entities/" target="_blank">Special Characters II </a> </li>
-	<li id="pink1"><a href="https://material.io/icons/" target="_blank">Google Icons</a></li>
-	<li id="green2"><a href="https://www298.lunapic.com/editor/" target="_blank">Online Photo Editor</a></li>
-	<li id="pinkpurple"><a href="https://www298.lunapic.com/editor/?action=transparent" target="_blank">Background Remover</a></li>
-	<li id="blue2"><a href="https://realfavicongenerator.net/" target="_blank">Favicon Generator</a></li>
-	
-	<li id="green3"><a href="https://developer.mozilla.org/en-US/" target="_blank">
-		MDN
-	</a></li>
-	<li id="purple3"><a href="https://codepen.io/" target="_blank">CodePen</a></li>
-	<li id="green3"><a href="https://caniuse.com/" target="_blank">Can I Use...?</a></li>
-	<li id="pink1"><a href="http://triangle.designyourcode.io/" target="_blank">Triangle Generator</a></li>
-</ul>
-</center>
-	</section> <br>
-	<footer onclick="hide()">&starf; ------ coded and designed by Qinyu Chen&nbsp;<font size="-5px" color="#B8C7C0">&bull; </font>2018 ------ &starf;<br><br></footer><br>
-	
-</div>
-<script>
-	var ul = document.getElementById('linkList');
-	var linkA = ul.getElementsByTagName('li');
-	console.log(linkA.length);
-	var requestURL = "https://chloeqino.github.io/link.json";
-	var request = new XMLHttpRequest();
-	request.open('GET',requestURL);
-	request.responseType = 'json';
-	request.send();
-	request.onload = function ()
-	{
-		var jsonLink = request.response;
-		newA(jsonLink);
-	}
-	var bar = document.getElementById('bar');
-	var menu = document.getElementById('menu-list');
-	var a = menu.getElementsByTagName('a');
-	var index = document.getElementById("index");
-	console.log(a.length);
-	function myFunction(x) {
-    if (x.matches || window.screen.width <=568) { // If media query matches
-        console.log("mobile");
-        bar.onclick = displayMenu;
-        menu.style.display="none";
-        var height = window.screen.height - 55;
-        console.log(height);
-        menu.style.height = height+"px";
+      <div id="code" onclick="hide()">
+        <span id="anchor-code2"></span>
+        <h3>Change the Default Value</h3>
        
-     for (var i = 2; i < a.length; i++) {
+          <p>
+            <br /><code class="prettyprint">
+              * {<br>
+              box-sizing: border-box;<br />
+              padding: 0;<br />
+              }<br />
+              body{<br />
+              padding: 0;<br />
+              margin: 0;<br />
+              }</code
+            >
+          </p>
+    
+      </div>
+      <br />
+      <div id="right1" onclick="hide()">
+        <span id="anchor-right1"></span>
+        <h3>Embeding Files</h3>
+        
+          <br />
+          &nbsp;<i>css file:</i>&nbsp; (inside the head tag) <br /><br />
+          <code class="prettyprint">
+            &lt;link rel="stylesheet" type="text/css" href="name.css"><br />
+          </code>
+          <br />
+        </code>
+        <p>
+          <i>javascipt file: </i>&nbsp;(inside the &lt;body> or &lt;head>)<br /><br /><code class="prettyprint">
+            &lt;script src="file_name.js">&lt;/script><br />
+          </code>
+        </p>
+      </div>
+      <br /><br />
+      <div id="center" onclick="hide()">
+        <span id="anchor-center"></span>
+        <a href="#anchor-center"><h3>Responsive Design</h3></a>
+        <br />
+        <p>
+          To create a responsive page, add the line of code inside the head tag:
+          <br /><br /><code class="prettyprint">
+            &lt;meta name="viewport" content="width=device-width,
+            initial-scale=1.0"></code
+          ><br />
+          <br />when the view point is #px or smaller:<br /><br />
+          <code class="prettyprint">
+            @media only screen and (max-width: #px) <br />{<br />
+            <span class="comment">/* your code here*/</span><br />
+            }
+          </code>
+          <br /><br />When width < height:<br /><br />
+          <code class="prettyprint"
+            >@media only screen and (orientation: portrait) <br />{<br />
+            <span class="comment">/* your code here*/</span><br />}</code
+          >
 
-     	a[i].onclick = function()
-     	{
-     		menu.style.display ="none";
-     		bar.setAttribute("class","fa fa-bars");
+          <br /><br />
+          Go to
+          <a
+            href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/"
+            target="_blank"
+            id="fa"
+            >this link</a
+          >
+          to check out Media Queries for Standard Devices
+        </p>
+      </div>
+      <br />
+      <div id="icon" onclick="hide()">
+        <span id="anchor-icon"></span>
+        <a href="#anchor-icon"><h3>Add Icons To Webpage</h3></a>
+        <br />
+        <p>
+          To use the
+          <a href="http://fontawesome.io/icons/" target="_blank" id="fa"
+            >Font Awesome Icons</a
+          >, add this line of code inside the head tag: <br /><br />
+          <code class="prettyprint">
+            &lt;link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><br />
+            <br />
+          </code>
 
-     	}
-     }
-    } 
-    else {
-       console.log("not mobile")
-       menu.style.display="block";
-       for (var i = 2; i < a.length; i++) 
-       {
-        a[i].onclick = function()
-     	{
-     		menu.style.display ="block";
-     	}
-       }
-       menu.style.height="auto";
-    }
-}
+          <br />To use the
+          <a href="https://material.io/icons/" target="_blank" id="fa"
+            >Google Icons</a
+          >, add this line of code inside the head tag:<br /><br />
+          <code class="prettyprint"
+            >&lt;link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"></code
+          >
+        </p>
+      </div>
+      <br />
+      <!--link shortcut-->
 
-var x = window.matchMedia("(max-width: 568px)");	
-   myFunction(x); // Call listener function at run time
-x.addListener(myFunction);
-    	
-</script>
+      <section id="link" onclick="hide()">
+        <span id="anchor-link"></span>
+        <center>
+          <ul id="linkList">
+            <li id="google">
+              <a href="https://fonts.google.com/" target="_blank"
+                >Google Fonts</a
+              >
+            </li>
+            <li id="pink">
+              <a href="https://www.w3schools.com/" target="_blank">W3School</a>
+            </li>
+            <li id="blue1">
+              <a
+                href="https://www.w3schools.com/bootstrap/default.asp"
+                target="_blank"
+                >Learning Bootstrap</a
+              >
+            </li>
+            <li id="green1">
+              <a
+                href="https://websitesetup.org/web-safe-fonts-html-css/"
+                target="_blank"
+                >Safe Fonts</a
+              >
+            </li>
+            <li id="doc">
+              <a href="http://htmlcolorcodes.com/color-picker/" target="_blank"
+                >Color Picker</a
+              >
+            </li>
+            <li id="pink1">
+              <a href="http://fontawesome.io/icons/" target="_blank"
+                >Font Awesome Icons</a
+              >
+            </li>
 
+            <li id="green2">
+              <a href="https://www.codecademy.com/learn" target="_blank"
+                >CodeAcedemy</a
+              >
+            </li>
 
+            <li id="pink1">
+              <a href="https://stackoverflow.com/" target="_blank"
+                >Stackoverflow</a
+              >
+            </li>
+            <li id="purple1">
+              <a
+                href="https://github.com/logeshpaul/CSS-Hacks#css-browser-selector"
+                target="_blank"
+                >CSS hacks</a
+              >
+            </li>
+            <li id="blue1">
+              <a href="https://github.com/explore" target="_blank">GitHub</a>
+            </li>
+            <li id="pink">
+              <a
+                href="https://www.webdesignerexpress.com/blog/css-glyphs-and-html-special-characters.html"
+                target="_blank"
+                >Special Characters</a
+              >
+            </li>
+            <li id="blue1">
+              <a href="https://css-tricks.com/" target="_blank">CSS-TRICKS</a>
+            </li>
+            <li id="green">
+              <a href="https://brajeshwar.github.io/entities/" target="_blank"
+                >Special Characters II
+              </a>
+            </li>
+            <li id="pink1">
+              <a href="https://material.io/icons/" target="_blank"
+                >Google Icons</a
+              >
+            </li>
+            <li id="green2">
+              <a href="https://www298.lunapic.com/editor/" target="_blank"
+                >Online Photo Editor</a
+              >
+            </li>
+            <li id="pinkpurple">
+              <a
+                href="https://www298.lunapic.com/editor/?action=transparent"
+                target="_blank"
+                >Background Remover</a
+              >
+            </li>
+            <li id="blue2">
+              <a href="https://realfavicongenerator.net/" target="_blank"
+                >Favicon Generator</a
+              >
+            </li>
 
-</body>
+            <li id="green3">
+              <a href="https://developer.mozilla.org/en-US/" target="_blank">
+                MDN
+              </a>
+            </li>
+            <li id="purple3">
+              <a href="https://codepen.io/" target="_blank">CodePen</a>
+            </li>
+            <li id="green3">
+              <a href="https://caniuse.com/" target="_blank">Can I Use...?</a>
+            </li>
+            <li id="pink1">
+              <a href="http://triangle.designyourcode.io/" target="_blank"
+                >Triangle Generator</a
+              >
+            </li>
+          </ul>
+        </center>
+      </section>
+      <br />
+      <footer onclick="hide()">
+        &starf; ------ coded and designed by Qinyu Chen&nbsp;<font
+          size="-5px"
+          color="#B8C7C0"
+          >&bull; </font
+        >2018 ------ &starf;<br /><br />
+      </footer>
+      <br />
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script>
+      var ul = document.getElementById("linkList");
+      var linkA = ul.getElementsByTagName("li");
+      console.log(linkA.length);
+      var requestURL = "https://chloeqino.github.io/link.json";
+      var request = new XMLHttpRequest();
+      request.open("GET", requestURL);
+      request.responseType = "json";
+      request.send();
+      request.onload = function () {
+        var jsonLink = request.response;
+        newA(jsonLink);
+      };
+      var bar = document.getElementById("bar");
+      var menu = document.getElementById("menu-list");
+      var a = menu.getElementsByTagName("a");
+      var index = document.getElementById("index");
+      console.log(a.length);
+      function myFunction(x) {
+        if (x.matches || window.screen.width <= 568) {
+          // If media query matches
+          console.log("mobile");
+          bar.onclick = displayMenu;
+          menu.style.display = "none";
+          var height = window.screen.height - 55;
+          console.log(height);
+          menu.style.height = height + "px";
+
+          for (var i = 2; i < a.length; i++) {
+            a[i].onclick = function () {
+              menu.style.display = "none";
+              bar.setAttribute("class", "fa fa-bars");
+            };
+          }
+        } else {
+          console.log("not mobile");
+          menu.style.display = "block";
+          for (var i = 2; i < a.length; i++) {
+            a[i].onclick = function () {
+              menu.style.display = "block";
+            };
+          }
+          menu.style.height = "auto";
+        }
+      }
+
+      var x = window.matchMedia("(max-width: 568px)");
+      myFunction(x); // Call listener function at run time
+      x.addListener(myFunction);
+    </script>
+  </body>
 </html>
