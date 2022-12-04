@@ -192,6 +192,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   console.log(navitems);
   console.log(sectionsid, spots);
   hideProjects();
+  console.log("scrolly" + window.scrollY);
+  let initialY = window.scrollY;
   document.addEventListener("scroll", function (e) {
     reponsiveNav();
     setTimeout(function () {
@@ -199,7 +201,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }, 200);
     if (
       window.scrollY <= sections[1].offsetTop &&
-      !isElementXPercentInViewport(projects[0], 1)
+      !isElementXPercentInViewport(projects[0], 1) &&
+      initialY <= sections[1].offsetTop
     ) {
       seem = false;
       hideProjects();
@@ -210,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       aboutmeseem = true;
     }
     inview = isElementXPercentInViewport(projects[0], 30);
-    if (inview && !seem) {
+    if ((inview && !seem) || initialY >= sections[1].offsetTop) {
       showProjects();
       seem = true;
     }
