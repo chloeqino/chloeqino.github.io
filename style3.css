@@ -60,8 +60,12 @@ section {
 	background-size:auto,35%,40%;
 	*/
   background-color: rgba(104, 67, 184, 0.8) !important;
-  background: url("gradientbg2.png");
-
+  /*background: url("gradientbg2.png");*/
+  background: radial-gradient(
+    52.18% 52.18% at 51.91% 47.82%,
+    rgba(84, 99, 255, 0.8) 0%,
+    rgba(125, 64, 255, 0.624) 100%
+  );
   background-repeat: no-repeat;
   min-height: 100%;
   height: 100%;
@@ -75,6 +79,71 @@ section {
 }
 #aboutme.hide #cube {
   opacity: 0;
+}
+
+#blobs {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  animation: swaying 10s ease infinite;
+}
+.blob {
+  position: absolute;
+}
+#blobs #bl {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(251, 207, 249, 0.38) 0%,
+    rgba(210, 226, 251, 0) 100%
+  );
+  width: 17vw;
+  height: 23vh;
+  top: 63%;
+  left: 0.04%;
+}
+#blobs #tl {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(251, 207, 249, 0.38) 0%,
+    rgba(210, 226, 251, 0) 100%
+  );
+  width: 29%;
+  height: 34%;
+  top: 12%;
+  left: 13%;
+}
+#blobs #tr-1 {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(131, 201, 217, 0.4) 0%,
+    rgba(210, 226, 251, 0) 100%
+  );
+  width: 11%;
+  height: 17%;
+  top: 20%;
+  left: 76%;
+}
+#blobs #tr-2 {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(210, 226, 251, 0.46) 0%,
+    rgba(210, 226, 251, 0) 100%
+  );
+  width: 14%;
+  height: 19%;
+  top: 24%;
+  left: 80%;
+}
+#blobs #br {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(116, 197, 202, 0.38) 0%,
+    rgba(210, 226, 251, 0) 100%
+  );
+  width: 29%;
+  height: 34%;
+  top: 69%;
+  left: 71%;
 }
 #aboutme.fadein #cube {
   animation: fadein 1.5s ease-in, rightin 1s ease-out;
@@ -189,6 +258,17 @@ img.me {
 }
 #text_intro p {
   padding: 4px 0;
+}
+@keyframes swaying {
+  0% {
+    left: -5%;
+  }
+  50% {
+    left: 5%;
+  }
+  100% {
+    left: -5%;
+  }
 }
 @keyframes gradient {
   0% {
