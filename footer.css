@@ -8,8 +8,9 @@ footer {
 }
 body > footer {
   background-color: rgb(248, 247, 255);
+  margin-top: 0px;
 }
-footer #contacts a {
+footer #contacts > a {
   margin-right: 10%;
   padding: 5px 0;
   color: #beb1da;
@@ -57,7 +58,7 @@ footer #copyright {
     text-align: center;
   }
   footer #contacts a {
-    margin: 0 10% 0 10%;
+    margin: 0 5% 0 5%;
     font-size: 30px;
   }
   footer #copyright {
