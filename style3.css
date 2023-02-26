@@ -72,6 +72,7 @@ section {
   max-height: 100%;
   animation: gradient 10s ease infinite;
   background-size: 120% 120%;
+  overflow: hidden;
 
   background-attachment: fixed;
   /*background-position:100% 100%;*/
@@ -85,10 +86,11 @@ section {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  animation: swaying 10s ease infinite;
+  /*animation: swaying 10s ease infinite;*/
 }
 .blob {
   position: absolute;
+  animation: blobbing 10s ease-in-out infinite;
 }
 #bottom {
   width: 100%;
@@ -96,6 +98,7 @@ section {
   position: absolute;
   overflow-x: hidden;
 }
+
 img#cloud {
   width: 100%;
   max-height: 25vh;
@@ -135,6 +138,7 @@ img#cloud {
   height: 34%;
   top: 12%;
   left: 13%;
+  animation-delay: -2s;
 }
 #blobs #tr-1 {
   background: radial-gradient(
@@ -142,10 +146,11 @@ img#cloud {
     rgba(131, 201, 217, 0.4) 0%,
     rgba(210, 226, 251, 0) 100%
   );
-  width: 11%;
-  height: 17%;
+  width: 11vw;
+  height: 11vw;
   top: 20%;
   left: 76%;
+  animation-delay: -7s;
 }
 #blobs #tr-2 {
   background: radial-gradient(
@@ -166,8 +171,9 @@ img#cloud {
   );
   width: 29%;
   height: 34%;
-  top: 69%;
+  top: 59%;
   left: 71%;
+  animation-delay: -3s;
 }
 #aboutme.fadein #cube {
   animation: fadein 1.5s ease-in, rightin 1s ease-out;
@@ -186,6 +192,17 @@ img#cloud {
   animation: fadein 1s ease-in;
   animation-fill-mode: backwards;
   animation-delay: 1.3s;
+}
+@keyframes blobbing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes leftin {
   from {
@@ -351,12 +368,12 @@ section h2 {
   position: relative;
   z-index: 98;
 
-  text-shadow: 3px 2px 4px rgba(181, 159, 243, 0.575);
+  /*text-shadow: 3px 2px 4px rgba(181, 159, 243, 0.575);*/
   font-size: 3vw;
   margin: 2em auto 1em auto;
-  font-weight: 200;
+  font-weight: 400;
   font-family: "Lato", sans-serif;
-  color: #655c79;
+  color: rgba(125, 64, 255, 0.624);
   display: table;
   text-transform: uppercase;
   border-bottom: 10px solid transparent;

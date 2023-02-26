@@ -1,240 +1,311 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<!--
+  <!--
 WRITTEN BY:Qinyu Chen
 EMAIL: Your email here
 -->
 
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="Qinyu Chen">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Qinyu Chen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Qinyu Chen's Portfolio">
-  <link rel="stylesheet" type="text/css" href="nav3.css">
-  <link rel="stylesheet" type="text/css" href="footer.css">
-   <link rel="stylesheet" type="text/css" href="style3.css">
-   
-   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="Qinyu Chen's Portfolio" />
+    <link rel="stylesheet" type="text/css" href="nav3.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="stylesheet" type="text/css" href="style3.css" />
 
-   
-   
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-  <link rel="stylesheet" type="text/css" href="icons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="icons.css" />
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-218226060-1"
+    ></script>
+    <script src="app.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-218226060-1"></script>
-<script src="app.js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-218226060-1");
+    </script>
 
-  gtag('config', 'UA-218226060-1');
-</script>
+    <!-- you would also link to Bootstrap here! -->
+    <title>Qinyu Chen</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <nav class="desktop" id="main-nav">
+      <a href="#" title="home page"
+        ><div id="logo">Q<span class="yellow">/</span>C</div></a
+      >
+      <div id="menu">
+        <a href="#hero" class="nav-item desktop-nav-item" title="home">Home</a>
+        <a href="#about" title="about" class="nav-item desktop-nav-item"
+          >About</a
+        >
+        <a href="#work" title="projects" class="nav-item desktop-nav-item"
+          >Projects</a
+        >
+      </div>
+    </nav>
+    <nav class="mobile" id="main-nav">
+      <a href="#" title="home page"
+        ><div id="logo">Q<span class="yellow">/</span>C</div></a
+      >
+      <div id="menu">
+        <div id="nav-icon">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="submenu hide" id="mb-menu">
+          <a href="#hero" class="nav-item" title="home">Home</a>
+          <a href="#about" title="about" class="nav-item">About</a>
+          <a href="#work" title="projects" class="nav-item">Projects</a>
+          <a href="mailto:qinyuc4@uci.edu"
+            ><span
+              class="material-icons-outlined yellow"
+              aria-label="email me"
+              id="mail"
+              >mail</span
+            ></a
+          >
+        </div>
+      </div>
+    </nav>
+    <section class="container" id="hero">
+      <div id="blobs">
+        <div id="bl" class="blob"></div>
+        <div id="tl" class="blob"></div>
+        <div id="tr-1" class="blob"></div>
+        <div id="tr-2" class="blob"></div>
+        <div id="br" class="blob"></div>
+      </div>
+      <div id="bottom">
+        <img src="clouds.svg#svgView(preserveAspectRatio(none))" id="cloud" />
+      </div>
+      <div class="vcenter" id="content">
+        <div id="intro">
+          <p class="hello">
+            <span class="blue name">
+              <span class="purple">Q</span>i<span class="purple">n</span>y<span
+                class="purple"
+                >u</span
+              >
+              C<span class="purple">h</span>e<span class="purple">n</span>
+            </span>
+          </p>
+          <p id="des" class="typing">develop, create, inspire</p>
+        </div>
+      </div>
 
-   <!-- you would also link to Bootstrap here! -->
-  <title>Qinyu Chen</title>
-</head>
-<body>
-  <div id="overlay"></div>
-  <nav class="desktop" id="main-nav">
-      
-    <a href="#" title="home page"><div id = 'logo'>Q<span class="yellow">/</span>C</div></a>
-   <div id='menu'>
-     <a href="#hero" class="nav-item desktop-nav-item" title="home">Home</a>
-     <a href="#about" title="about" class="nav-item desktop-nav-item">About</a>
-     <a href="#work" title="projects" class="nav-item desktop-nav-item">Projects</a>
-   </div>
-   
- </nav>
- <nav class="mobile" id="main-nav">
-      
-  <a href="#" title="home page"><div id = 'logo'>Q<span class="yellow">/</span>C</div></a>
- <div id='menu'>
-  <div id="nav-icon">
-    <span></span>
-    <span></span>
-    
-  </div>
-  <div class="submenu hide" id="mb-menu">
-   <a href="#hero" class="nav-item" title="home">Home</a>
-   <a href="#about" title="about" class="nav-item">About</a>
-   <a href="#work" title="projects" class="nav-item">Projects</a>
- <a href="mailto:qinyuc4@uci.edu"><span class="material-icons-outlined yellow" aria-label="email me" id='mail'>mail</span></a>
-</div>
-</div>
- </div>
- 
-
-</nav>
-  <section class = 'container' id="hero">
-
-   <div id="blobs">
-    <div id="bl" class="blob"></div>
-    <div id="tl" class="blob"></div>
-    <div id="tr-1" class="blob"></div>
-    <div id="tr-2" class="blob"></div>
-    <div id="br" class="blob"></div>
-    
-   </div>
-   <div id="bottom"><img src="clouds.svg#svgView(preserveAspectRatio(none))" id="cloud"></div>
-    
-    <div class="vcenter" id = "content">
-    <div id = 'intro'>
-    <p class='hello'>
-      
-      <span class="blue name">
-      <span class='purple'>Q</span>i<span class='purple'>n</span>y<span class='purple'>u</span> C<span class='purple'>h</span>e<span class='purple'>n</span>
-      </span>
-    </p>
-     <p id='des' class="typing">develop, create, inspire</p>
-  </div>
- 
-</div>
-
-<div id = 'viewworks'>
-  <!--
+      <div id="viewworks">
+        <!--
   <a href="#work" id='works' aria-label='view my work'>View My Work</a>
   -->
-  <a href="#about" id="mouse" aria-label="scroll down">
-    <span class="fa fa-chevron-down"></span>
-   
-    
-    </a>
-</div>
-</section>
-<section class="container" id="about">
-  <h2>About Me</h2>
-  <div>
-    <div class="wrapper" id="aboutme">
-    
-    <div id="text_intro">
-      <p>Hello, I am Qinyu Chen and  I am studying Informatics at the University of California, Irvine. I am an aspiring Front-end developer who likes to make web applications that are functional and beautiful. </p>
-      <p>I find it fascinating to experiment with the magic of web technologies and explore the seemingly infinite of possibilities what the web has to offer.
-      </p>
-      <a href="#work" class="next">View my Work</a>
-    </div>
-    <div id="cube">
-      <div class="cube_side">
-      <img  src="bimoji.png" alt="Qinyu Chen's bitmoji" class="me">
+        <a href="#about" id="mouse" aria-label="scroll down">
+          <span class="fa fa-chevron-down"></span>
+        </a>
       </div>
-      <div class="cube_side back">
-        <img  src="bimoji2.png" alt="Qinyu Chen's bitmoji" class="me">
+    </section>
+    <section class="container" id="about">
+      <h2>About Me</h2>
+      <div>
+        <div class="wrapper" id="aboutme">
+          <div id="text_intro">
+            <p>
+              Hello, I am Qinyu Chen and I am studying Informatics at the
+              University of California, Irvine. I am an aspiring Front-end
+              developer who likes to make web applications that are functional
+              and beautiful.
+            </p>
+            <p>
+              I find it fascinating to experiment with the magic of web
+              technologies and explore the seemingly infinite of possibilities
+              what the web has to offer.
+            </p>
+            <a href="#work" class="next">View my Work</a>
+          </div>
+          <div id="cube">
+            <div class="cube_side">
+              <img src="bimoji.png" alt="Qinyu Chen's bitmoji" class="me" />
+            </div>
+            <div class="cube_side back">
+              <img src="bimoji2.png" alt="Qinyu Chen's bitmoji" class="me" />
+            </div>
+          </div>
         </div>
-        
-    </div>
-    </div>
-
-  </div>
-</section>
-<section class="container" id="work">
- 
-  
-  <div class="wrapper">
-    <h2 class="purple"><img src="cat.png">My Work</h2>
-    <div class="row  project">
-        
-      <div class="col left">
-        <img src="qcboba.png" class="mockup" alt="qcboba">
-         <div class="cover">
-      <div class="vcenter">
-          <a href="https://github.com/chloeqino/e-commerce" class="details" target="_blank">View Source Code</a>
-          <a href="https://chloeqino.github.io/e-commerce/" class="url" target="_blank" >View Demo</a>
-        </div>
-        </div>
-        </div>
-      
-      <div class="col description">
-        <h3>QC Boba</h3>
-        <p>A functional prototype of an online ordering system for a fake business named QC Boba<br>Made with React</p>
-       
-        
-        <a href="https://chloeqino.github.io/e-commerce/" class="details" target="_blank">View Demo</a>
-      
-  
-    </div>
-    
-  
-  </div>
-  <div class="row  project">
-        
-    <div class="col left">
-      <img src="spacestagram.png" class="mockup" alt="mockup of the website">
-       <div class="cover">
-    <div class="vcenter">
-        <a href="https://github.com/chloeqino/spacestagram/tree/master" class="details" target="_blank">View Source Code</a>
-        <a href="https://chloeqino.github.io/spacestagram/" class="url" target="_blank" >View Demo</a>
       </div>
-      </div>
-      </div>
-    
-    <div class="col description">
-      <h3>Spacestagram</h3>
-      <p>Dsiplay the most recent updates from NASA's Astronomy Picture of the Day archive by integrating NASA's <abbr title="Astronomy Picture of the Day">APOD</abbr> API
-        <br>
-        Technologies used: React, HTML, CSS, JavaScript
-      </p>
+    </section>
+    <section class="container" id="work">
+      <div class="wrapper">
+        <h2 class="purple"><img src="cat.png" />My Work</h2>
+        <div class="row project">
+          <div class="col left">
+            <img src="qcboba.png" class="mockup" alt="qcboba" />
+            <div class="cover">
+              <div class="vcenter">
+                <a
+                  href="https://github.com/chloeqino/e-commerce"
+                  class="details"
+                  target="_blank"
+                  >View Source Code</a
+                >
+                <a
+                  href="https://chloeqino.github.io/e-commerce/"
+                  class="url"
+                  target="_blank"
+                  >View Demo</a
+                >
+              </div>
+            </div>
+          </div>
 
-     
-      
-      <a href="https://chloeqino.github.io/spacestagram/" class="details" target="_blank">View Demo</a>
-    
+          <div class="col description">
+            <h3>QC Boba</h3>
+            <p>
+              A functional prototype of an online ordering system for a fake
+              business named QC Boba<br />Made with React
+            </p>
 
-  </div>
-  
+            <a
+              href="https://chloeqino.github.io/e-commerce/"
+              class="details"
+              target="_blank"
+              >View Demo</a
+            >
+          </div>
+        </div>
+        <div class="row project">
+          <div class="col left">
+            <img
+              src="spacestagram.png"
+              class="mockup"
+              alt="mockup of the website"
+            />
+            <div class="cover">
+              <div class="vcenter">
+                <a
+                  href="https://github.com/chloeqino/spacestagram/tree/master"
+                  class="details"
+                  target="_blank"
+                  >View Source Code</a
+                >
+                <a
+                  href="https://chloeqino.github.io/spacestagram/"
+                  class="url"
+                  target="_blank"
+                  >View Demo</a
+                >
+              </div>
+            </div>
+          </div>
 
-</div>
+          <div class="col description">
+            <h3>Spacestagram</h3>
+            <p>
+              Dsiplay the most recent updates from NASA's Astronomy Picture of
+              the Day archive by integrating NASA's
+              <abbr title="Astronomy Picture of the Day">APOD</abbr> API
+              <br />
+              Technologies used: React, HTML, CSS, JavaScript
+            </p>
 
+            <a
+              href="https://chloeqino.github.io/spacestagram/"
+              class="details"
+              target="_blank"
+              >View Demo</a
+            >
+          </div>
+        </div>
 
- <div class="row  project">
-    <div class="col left">
-      <video id="demovideo" width="100%" poster="demopreview.png" controls>
-        <source src="drawingtooldemo.mp4" type="video/mp4">
-       
-        Your browser does not support the video tag.
-        </video>
-      <!--
+        <div class="row project">
+          <div class="col left">
+            <video
+              id="demovideo"
+              width="100%"
+              poster="demopreview.png"
+              controls
+            >
+              <source src="drawingtooldemo.mp4" type="video/mp4" />
+
+              Your browser does not support the video tag.
+            </video>
+            <!--
       <div class="cover">
     <div class="vcenter">
         <a href="p2.html" class="details">view details</a>
         <a href="https://chloeqino.github.io/practice_js.html" class="url" target="_blank" >visit website </a>
       </div>
       </div>-->
-
-    </div>
-    <div class="col description">
-      <h3>Online Drawing Tool</h3>
-      <p>a web-based drawing tool that allows users to change background and stroke color as well as to save and download their work!
-        <br />
-        Note: this project has not been published yet since I am still working on it. Feel Free to watch the demo video!
-      </p>
-       <span class="unfinished">Work in process...</span>
+          </div>
+          <div class="col description">
+            <h3>Online Drawing Tool</h3>
+            <p>
+              a web-based drawing tool that allows users to change background
+              and stroke color as well as to save and download their work!
+              <br />
+              Note: this project has not been published yet since I am still
+              working on it. Feel Free to watch the demo video!
+            </p>
+            <span class="unfinished">Work in process...</span>
+          </div>
+        </div>
       </div>
-  </div>
-  
-  </div>
-</section>
-<footer class="row">
-  <div class="col" id="contacts">
-   
-    <a href="https://github.com/chloeqino" target="_blank" title="chloeqino"><span class="fa fa-chloeqino"></span></a>
-    <a href="https://www.linkedin.com/in/qinyu-chen-75187813a/" target="_blank" title="in"><span class="in-icon">in</span></a>
-    <a href="https://www.instagram.com/qinyu.c12/" target="_blank"  title="qinyu.c12"><span class="fa fa-qinyuc"></span></a>
-    <a href="https://shengyuan-lu.com/" target="_blank"><span class="far fa-heart"></span></a>
-    
-  </div>
-  <div class="col" id="copyright"><div>designed and coded with <span class="fa fa-heart" id="heart"></span> by Qinyu Chen</div></div>
-</footer>
-<!---
+    </section>
+    <footer class="row">
+      <div class="col" id="contacts">
+        <a href="https://github.com/chloeqino" target="_blank" title="chloeqino"
+          ><span class="fa fa-chloeqino"></span
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/qinyu-chen-75187813a/"
+          target="_blank"
+          title="in"
+          ><span class="in-icon">in</span></a
+        >
+        <a
+          href="https://www.instagram.com/qinyu.c12/"
+          target="_blank"
+          title="qinyu.c12"
+          ><span class="fa fa-qinyuc"></span
+        ></a>
+        <a href="https://shengyuan-lu.com/" target="_blank"
+          ><span class="far fa-heart"></span
+        ></a>
+      </div>
+      <div class="col" id="copyright">
+        <div>
+          designed and coded with
+          <span class="fa fa-heart" id="heart"></span> by Qinyu Chen
+        </div>
+      </div>
+    </footer>
+    <!---
 <script type="module">
   import * as THREE from 'https://cdn.skypack.dev/three@0.138.0';
     const scene = new THREE.Scene();
@@ -273,5 +344,5 @@ camera.position.z = 3;
 			animate();
 </script>
 -->
-</body>
+  </body>
 </html>
